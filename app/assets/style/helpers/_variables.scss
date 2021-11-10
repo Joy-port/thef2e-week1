@@ -7,15 +7,15 @@
 
 // scss-docs-start gray-color-variables
 $white:    #fff !default;
-$gray-100: #f8f9fa !default;
+$gray-100: #f8f8f8 !default;//  f8f9fa
 $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
 $gray-400: #ced4da !default;
 $gray-500: #adb5bd !default;
 $gray-600: #6c757d !default;
-$gray-700: #495057 !default;
-$gray-800: #343a40 !default;
-$gray-900: #212529 !default;
+$gray-700: rgba(0,0,0,0.3) !default; // #495057
+$gray-800: rgba(0,0,0,0.5) !default;//  #343a40
+$gray-900: rgba(0,0,0,0.8) !default;// #212529 
 $black:    #000 !default;
 // scss-docs-end gray-color-variables
 
@@ -36,16 +36,16 @@ $grays: (
 // fusv-enable
 
 // scss-docs-start color-variables
-$blue:    #0d6efd !default;
+$blue:    #6E9292 !default; //#0d6efd
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #d63384 !default;
 $red:     #dc3545 !default;
-$orange:  #fd7e14 !default;
-$yellow:  #ffc107 !default;
-$green:   #198754 !default;
-$teal:    #20c997 !default;
-$cyan:    #0dcaf0 !default;
+$orange:  #C2BB96 !default; //#fd7e14
+$yellow:  #E6DDB2 !default; //#ffc107
+$green:   #738677 !default; //#198754
+$teal:    #A7B4AA !default; //#20c997
+$cyan:    #A7D4DA !default; //#0dcaf0
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
@@ -67,7 +67,7 @@ $colors: (
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables
-$primary:       #00cc99; // $blue !default;
+$primary:       $blue; // $blue !default;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
@@ -441,7 +441,7 @@ $line-height-base:            1.5 !default;
 $line-height-sm:              1.25 !default;
 $line-height-lg:              2 !default;
 
-$h1-font-size:                $font-size-base * 2.5 !default;
+$h1-font-size:                $font-size-base * 3 !default;
 $h2-font-size:                $font-size-base * 2 !default;
 $h3-font-size:                $font-size-base * 1.75 !default;
 $h4-font-size:                $font-size-base * 1.5 !default;
@@ -465,7 +465,7 @@ $headings-margin-bottom:      $spacer * .5 !default;
 $headings-font-family:        null !default;
 $headings-font-style:         null !default;
 $headings-font-weight:        500 !default;
-$headings-line-height:        1.2 !default;
+$headings-line-height:        1.4 !default;
 $headings-color:              null !default;
 // scss-docs-end headings-variables
 

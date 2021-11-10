@@ -1,5 +1,26 @@
-.index__h1 {
-  color:#00cc99;
-  font-size: 20px;
-  font-weight: 400;
+.bg-img{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.bg-gradient-primary{
+  background-image: linear-gradient($cyan,  $white);
+  width: 100%;
+  height: 366px;
+
+}
+
+.nav-link{
+  color: $gray-800;
+  font-weight: 700;
+  position: relative;
+  &:not(:last-child)::after{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 1.5rem;
+    border-right: 2px solid $gray-800;
+    line-height: 1.5rem; 
+    right: 0;
+  }
 }
