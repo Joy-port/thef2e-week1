@@ -18342,6 +18342,10 @@ img {
   border-radius: 30px;
 }
 
+.card-rounded > div > img {
+  border-radius: 30px;
+}
+
 .card-rounded > div {
   border-radius: 30px;
 }
@@ -18352,6 +18356,10 @@ img {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+
+.card-border {
+  border: 2px solid rgba(0, 0, 0, 0.3);
 }
 
 .card-btn-group {
@@ -18383,6 +18391,18 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.card-top-start {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.card-top-end {
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
 .link-star {
@@ -18493,6 +18513,13 @@ img {
 
 .link-dark:hover {
   color: rgba(0, 0, 0, 0.8);
+}
+
+.logo {
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+  height: 200px;
 }
 
 /*# sourceMappingURL=all.css.map */
