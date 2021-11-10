@@ -25,8 +25,8 @@ current: index
   </h1>
 </div>
 </div>
-<div class="bg-gradient-primary">
-  <div class="text-center mb-14">
+<div class="bg-gradient-top">
+  <div class="container text-center mb-14">
   <p>台灣許多美景媲美國外，值此五倍券、國旅券及觀光業者加碼優惠盡出之際，旅行台灣就是現在！</p>
    <p> 到哪裡旅遊還沒有想法的民眾，歡迎到台灣觀光，體驗「台灣之美」! </p>
   </div>
@@ -76,46 +76,472 @@ current: index
 
 </div>
 
-<div class="container">
+
+<nav class="container">
   <ul class="row mb-14">
-    <li class="col-3">
+    <li class="col-6 col-md-3 mb-5 mb-md-0">
       <a href="#" class="d-block position-relative card-hover-shadow">
         <img src="./assets/images/card-view.png" alt="card view" class="ratio ratio-28x39 d-block">
         <p class="card-tag-top h2 me-1">景點</p>
       </a>
     </li>
-    <li class="col-3">
+    <li class="col-6 col-md-3 mb-5 mb-md-0">
       <a href="#" class="d-block position-relative card-hover-shadow">
         <img src="./assets/images/card-food.png" alt="card view" class="ratio ratio-28x39">
         <p class="card-tag-top h2 me-1">美食</p>
       </a>
     </li>
-    <li class="col-3">
+    <li class="col-6 col-md-3">
       <a href="#" class="d-block position-relative card-hover-shadow">
         <img src="./assets/images/card-home.png" alt="card view" class="ratio ratio-28x39">
         <p class="card-tag-top h2 me-1">住宿</p>
       </a>
     </li>
-    <li class="col-3">
+    <li class="col-6 col-md-3">
       <a href="#" class="d-block position-relative card-hover-shadow">
         <img src="./assets/images/card-bus.png" alt="card view" class="ratio ratio-28x39">
         <p class="card-tag-top h2 me-1">交通</p>
       </a>
     </li>
   </ul>
-</div>
+</nav>
 
+<section>
 <div class="bg-primary py-3">
   <div class="container d-flex justify-content-between">
     <h2 class="text-white">熱門景點</h2>
-    <button type="button" class="btn btn-outline-light py-2 px-8 border-4 fs-18">查看更多</button>
+    <button type="button" class="btn btn-outline-light btn-long btn-long-primary">查看更多</button>
   </div>
 </div>
 <div class="container py-17">
   <ul class="row">
-    <li class="col-4">
+    <li class="col-md-4 mb-5 mb-md-0">
       <div class="card card-rounded">
-      <img src="https://images.unsplash.com/photo-1601534621851-c19ba5464244?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" class="h-400 card-img card-bg-img" alt="view img"></div>
+        <div class="d-flex flex-column justify-content-between bg-img h-400" style="background-image: url(https://images.unsplash.com/photo-1601534621851-c19ba5464244?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);">
+        <div class="d-flex justify-content-between p-5">
+          <div class="card-btn-group">
+            <a href="#" class="material-icons-outlined link-star">
+              star
+              </a>
+              <span class="me-1">2.5</span>
+              <a href="#" class="material-icons-outlined">
+                visibility
+              </a>
+                <span>6 萬</span>
+          </div>
+          <a href="#" class="card-btn-circle">
+            <span class="material-icons-outlined align-middle">
+              bookmark_border
+              </span>
+          </a>
+
+        </div>
+        <div class="d-flex justify-content-between p-5">
+          <h3 class="h3 text-white text-shadow">台北101</h3>
+          <div class="d-flex align-items-center text-white">
+            <span class="material-icons-outlined align-items-center">
+              location_on
+              </span>
+              台北
+          </div>
+        </div>
+      </div>
+      </div>
+    </li>
+    <li class="col-md-4 mb-5 mb-md-0">
+      <div class="card card-rounded">
+        <div class="d-flex flex-column justify-content-between bg-img h-400" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Chiang_Kai-shek_memorial_amk.jpg/560px-Chiang_Kai-shek_memorial_amk.jpg);">
+        <div class="d-flex justify-content-between p-5">
+          <div class="card-btn-group">
+            <a href="#" class="material-icons-outlined link-star">
+              star
+              </a>
+              <span class="me-1">2.5</span>
+              <a href="#" class="material-icons-outlined">
+                visibility
+              </a>
+                <span>6 萬</span>
+          </div>
+          <a href="#" class="card-btn-circle">
+            <span class="material-icons-outlined align-middle">
+              bookmark_border
+              </span>
+          </a>
+
+        </div>
+        <div class="d-flex justify-content-between p-5">
+          <h3 class="h3 text-white text-shadow">中正紀念堂</h3>
+          <div class="d-flex align-items-center text-white">
+            <span class="material-icons-outlined align-items-center">
+              location_on
+              </span>
+              台北
+          </div>
+        </div>
+      </div>
+      </div>
+    </li>
+    <li class="col-md-4">
+      <div class="card card-rounded">
+        <div class="d-flex flex-column justify-content-between bg-img h-400" style="background-image: url(https://www.taiwantourcar.com/wp-content/uploads/2020/06/%E4%B9%9D%E4%BB%BD%E4%B8%80%E6%97%A5%E9%81%8A.jpg);">
+        <div class="d-flex justify-content-between p-5">
+          <div class="card-btn-group">
+            <a href="#" class="material-icons-outlined link-star">
+              star
+              </a>
+              <span class="me-1">2.5</span>
+              <a href="#" class="material-icons-outlined">
+                visibility
+              </a>
+                <span>6 萬</span>
+          </div>
+          <a href="#" class="card-btn-circle">
+            <span class="material-icons-outlined align-middle">
+              bookmark_border
+              </span>
+          </a>
+
+        </div>
+        <div class="d-flex justify-content-between p-5">
+          <h3 class="h3 text-white text-shadow">九份</h3>
+          <div class="d-flex align-items-center text-white">
+            <span class="material-icons-outlined align-items-center">
+              location_on
+              </span>
+              台北
+          </div>
+        </div>
+      </div>
+      </div>
     </li>
   </ul>
 </div>
+</section>
+
+<section>
+<div class="bg-success py-3">
+  <div class="container d-flex justify-content-between">
+    <h2 class="text-white">熱門美食</h2>
+    <button type="button" class="btn btn-outline-light btn-long btn-long-success">查看更多</button>
+  </div>
+</div>
+<div class="container py-17">
+  <ul class="row">
+    <li class="col-md-4 mb-5 mb-md-0">
+      <div class="card card-rounded">
+        <div class="d-flex flex-column justify-content-between bg-img h-400" style="background-image: url(https://images.unsplash.com/photo-1601534621851-c19ba5464244?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);">
+        <div class="d-flex justify-content-between p-5">
+          <div class="card-btn-group">
+            <a href="#" class="material-icons-outlined link-star">
+              star
+              </a>
+              <span class="me-1">2.5</span>
+              <a href="#" class="material-icons-outlined">
+                visibility
+              </a>
+                <span>6 萬</span>
+          </div>
+          <a href="#" class="card-btn-circle">
+            <span class="material-icons-outlined align-middle">
+              bookmark_border
+              </span>
+          </a>
+
+        </div>
+        <div class="d-flex justify-content-between p-5">
+          <h3 class="h3 text-white text-shadow">台北101</h3>
+          <div class="d-flex align-items-center text-white">
+            <span class="material-icons-outlined align-items-center">
+              location_on
+              </span>
+              台北
+          </div>
+        </div>
+      </div>
+      </div>
+    </li>
+    <li class="col-md-4 mb-5 mb-md-0">
+      <div class="card card-rounded">
+        <div class="d-flex flex-column justify-content-between bg-img h-400" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Chiang_Kai-shek_memorial_amk.jpg/560px-Chiang_Kai-shek_memorial_amk.jpg);">
+        <div class="d-flex justify-content-between p-5">
+          <div class="card-btn-group">
+            <a href="#" class="material-icons-outlined link-star">
+              star
+              </a>
+              <span class="me-1">2.5</span>
+              <a href="#" class="material-icons-outlined">
+                visibility
+              </a>
+                <span>6 萬</span>
+          </div>
+          <a href="#" class="card-btn-circle">
+            <span class="material-icons-outlined align-middle">
+              bookmark_border
+              </span>
+          </a>
+
+        </div>
+        <div class="d-flex justify-content-between p-5">
+          <h3 class="h3 text-white text-shadow">中正紀念堂</h3>
+          <div class="d-flex align-items-center text-white">
+            <span class="material-icons-outlined align-items-center">
+              location_on
+              </span>
+              台北
+          </div>
+        </div>
+      </div>
+      </div>
+    </li>
+    <li class="col-md-4">
+      <div class="card card-rounded">
+        <div class="d-flex flex-column justify-content-between bg-img h-400" style="background-image: url(https://www.taiwantourcar.com/wp-content/uploads/2020/06/%E4%B9%9D%E4%BB%BD%E4%B8%80%E6%97%A5%E9%81%8A.jpg);">
+        <div class="d-flex justify-content-between p-5">
+          <div class="card-btn-group">
+            <a href="#" class="material-icons-outlined link-star">
+              star
+              </a>
+              <span class="me-1">2.5</span>
+              <a href="#" class="material-icons-outlined">
+                visibility
+              </a>
+                <span>6 萬</span>
+          </div>
+          <a href="#" class="card-btn-circle">
+            <span class="material-icons-outlined align-middle">
+              bookmark_border
+              </span>
+          </a>
+
+        </div>
+        <div class="d-flex justify-content-between p-5">
+          <h3 class="h3 text-white text-shadow">九份</h3>
+          <div class="d-flex align-items-center text-white">
+            <span class="material-icons-outlined align-items-center">
+              location_on
+              </span>
+              台北
+          </div>
+        </div>
+      </div>
+      </div>
+    </li>
+  </ul>
+</div>
+</section>
+
+<section>
+<div class="bg-orange py-3">
+  <div class="container d-flex justify-content-between">
+    <h2 class="text-white">住宿推薦</h2>
+    <button type="button" class="btn btn-outline-light btn-long btn-long-orange">查看更多</button>
+  </div>
+</div>
+<div class="container py-17">
+  <ul class="row">
+    <li class="col-md-4 mb-5 mb-md-0">
+      <div class="card card-rounded">
+        <div class="d-flex flex-column justify-content-between bg-img h-400" style="background-image: url(https://images.unsplash.com/photo-1601534621851-c19ba5464244?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);">
+        <div class="d-flex justify-content-between p-5">
+          <div class="card-btn-group">
+            <a href="#" class="material-icons-outlined link-star">
+              star
+              </a>
+              <span class="me-1">2.5</span>
+              <a href="#" class="material-icons-outlined">
+                visibility
+              </a>
+                <span>6 萬</span>
+          </div>
+          <a href="#" class="card-btn-circle">
+            <span class="material-icons-outlined align-middle">
+              bookmark_border
+              </span>
+          </a>
+
+        </div>
+        <div class="d-flex justify-content-between p-5">
+          <h3 class="h3 text-white text-shadow">台北101</h3>
+          <div class="d-flex align-items-center text-white">
+            <span class="material-icons-outlined align-items-center">
+              location_on
+              </span>
+              台北
+          </div>
+        </div>
+      </div>
+      </div>
+    </li>
+    <li class="col-md-4 mb-5 mb-md-0">
+      <div class="card card-rounded">
+        <div class="d-flex flex-column justify-content-between bg-img h-400" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Chiang_Kai-shek_memorial_amk.jpg/560px-Chiang_Kai-shek_memorial_amk.jpg);">
+        <div class="d-flex justify-content-between p-5">
+          <div class="card-btn-group">
+            <a href="#" class="material-icons-outlined link-star">
+              star
+              </a>
+              <span class="me-1">2.5</span>
+              <a href="#" class="material-icons-outlined">
+                visibility
+              </a>
+                <span>6 萬</span>
+          </div>
+          <a href="#" class="card-btn-circle">
+            <span class="material-icons-outlined align-middle">
+              bookmark_border
+              </span>
+          </a>
+
+        </div>
+        <div class="d-flex justify-content-between p-5">
+          <h3 class="h3 text-white text-shadow">中正紀念堂</h3>
+          <div class="d-flex align-items-center text-white">
+            <span class="material-icons-outlined align-items-center">
+              location_on
+              </span>
+              台北
+          </div>
+        </div>
+      </div>
+      </div>
+    </li>
+    <li class="col-md-4">
+      <div class="card card-rounded">
+        <div class="d-flex flex-column justify-content-between bg-img h-400" style="background-image: url(https://www.taiwantourcar.com/wp-content/uploads/2020/06/%E4%B9%9D%E4%BB%BD%E4%B8%80%E6%97%A5%E9%81%8A.jpg);">
+        <div class="d-flex justify-content-between p-5">
+          <div class="card-btn-group">
+            <a href="#" class="material-icons-outlined link-star">
+              star
+              </a>
+              <span class="me-1">2.5</span>
+              <a href="#" class="material-icons-outlined">
+                visibility
+              </a>
+                <span>6 萬</span>
+          </div>
+          <a href="#" class="card-btn-circle">
+            <span class="material-icons-outlined align-middle">
+              bookmark_border
+              </span>
+          </a>
+
+        </div>
+        <div class="d-flex justify-content-between p-5">
+          <h3 class="h3 text-white text-shadow">九份</h3>
+          <div class="d-flex align-items-center text-white">
+            <span class="material-icons-outlined align-items-center">
+              location_on
+              </span>
+              台北
+          </div>
+        </div>
+      </div>
+      </div>
+    </li>
+  </ul>
+</div>
+</section>
+
+<footer>
+  <ul class="bg-gradient-bottom row justify-content-center d-none d-md-flex">
+    <li class="col-2">
+      <h4 class="fz-28 text-center mb-6">活動新訊</h4>
+      <ul class="fz-24 text-center">
+        <li class="mb-6">
+          <a href="#" class="link-dark">最新消息</a>
+        </li>
+        <li class="mb-6">
+          <a href="#" class="link-dark">活動異動</a>
+        </li>
+        <li class="">
+          <a href="#" class="link-dark">熱門話題</a>
+        </li>
+      </ul>
+
+    </li>
+    <li class="col-2">
+      <h4 class="fz-28 text-center mb-6">景點</h4>
+      <ul class="fz-24 text-center">
+        <li class="mb-6">
+          <a href="#" class="link-dark">熱門景點</a>
+        </li>
+        <li class="mb-6">
+          <a href="#" class="link-dark">網紅攻略</a>
+        </li>
+        <li class="">
+          <a href="#" class="link-dark">主題景點</a>
+        </li>
+      </ul>
+
+    </li>
+    <li class="col-2">
+      <h4 class="fz-28 text-center mb-6">美食</h4>
+      <ul class="fz-24 text-center">
+        <li class="mb-6">
+          <a href="#" class="link-dark">台灣文化</a>
+        </li>
+        <li class="mb-6">
+          <a href="#" class="link-dark">台灣小吃</a>
+        </li>
+        <li class="mb-6">
+          <a href="#" class="link-dark">台灣在地特色</a>
+        </li>
+        <li class="mb-6">
+          <a href="#" class="link-dark">熱門美食</a>
+        </li>
+        <li class="mb-6">
+          <a href="#" class="link-dark">網紅必推美食</a>
+        </li>
+      </ul>
+
+    </li>
+    <li class="col-2">
+      <h4 class="fz-28 text-center mb-6">住宿</h4>
+      <ul class="fz-24 text-center">
+        <li class="mb-6">
+          <a href="#" class="link-dark">觀光旅館</a>
+        </li>
+        <li class="mb-6">
+          <a href="#" class="link-dark">旅館</a>
+        </li>
+        <li class="mb-6">
+          <a href="#" class="link-dark">民宿</a>
+        </li>
+        <li class="">
+          <a href="#" class="link-dark">住宿推薦</a>
+        </li>
+      </ul>
+
+    </li>
+    <li class="col-2">
+      <h4 class="fz-28 text-center mb-6">交通</h4>
+      <ul class="fz-24 text-center">
+        <li class="mb-6">
+          <a href="#" class="link-dark">區內交通</a>
+        </li>
+        <li class="mb-6">
+          <a href="#" class="link-dark">地圖指南</a>
+        </li>
+        <li class="">
+          <a href="#" class="link-dark">交通租賃</a>
+        </li>
+      </ul>
+
+    </li>
+  </ul>
+  <div class="bg-primary">
+    <div class="container d-flex flex-column flex-md-row gap-5 py-5">
+      <a href="#" class="d-block d-md-none mx-auto">
+        <img src="./assets/images/logo.png" alt="logo" class="logo-lg">
+      </a>
+      <a href="#" class="d-none d-md-block">
+        <img src="./assets/images/logo.png" alt="logo" class="logo-sm">
+      </a>
+        
+      <div class="text-white fw-bold text-center text-md-start">
+        <p>24小時免付費旅遊諮詢熱線：0800-011765</p>
+        <p>免付費國旅券專線：0800-211734（服務時間：週一至週日8:30~18:30）</p>
+      </div>
+    </div>
+  </div>
+</footer>

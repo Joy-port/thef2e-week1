@@ -1,0 +1,32 @@
+.btn-long{
+    border-radius: 8px;
+    border: 4px solid $white;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    font-size: 18px;
+
+}
+
+.btn-long-primary{
+    &:hover{
+        color: $primary;
+        background-color: #ffffff91;
+    }
+
+}
+.btn-long-success{
+    &:hover{
+        color: $success;
+        background-color: #ffffff91;
+    }
+
+}
+.btn-long-orange{
+    &:hover{
+        color: $orange;
+        background-color: #ffffff91;
+    }
+
+}
