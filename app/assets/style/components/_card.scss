@@ -28,3 +28,16 @@
         }
     }
 }
+
+.card-rounded{
+    border: 0;
+    border-radius: 30px;
+    &>img{
+        border-radius: 30px;
+    }
+}
+.card-bg-img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
