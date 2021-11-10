@@ -5,7 +5,7 @@ engine: ejs
 current: index
 ---
 <!-- banner -->
-<div class="bg-banner bg-img vh-100" style="background-image: url(./assets/images/banner-index.png);">
+<div class="bg-banner bg-img" style="background-image: url(./assets/images/banner-index.png); height:700px">
   <div class="container">
   <nav class="d-flex align-items-center justify-content-end">
     <a href="#" class="nav-link">活動新訊</a>
@@ -14,16 +14,101 @@ current: index
     <a href="#" class="nav-link">住宿</a>
     <a href="#" class="nav-link">交通</a>
 
-    <a href="#" class=""><span class="material-icon-outlined"></span></a
+    <a href="#" class="align-middle link-dark ms-2 me-2"><span class="material-icons-outlined align-middle">search</span></a
     >
-    <a href="#" class=""></a>
+    <a href="#" class="">
+      <img class="bg-white rounded-circle p-1" src="./assets/images/icon-person.png" alt="person icon" style="width: 24px; height: 24px;">
+    </a>
   </nav>
+  <h1 class="d-flex justify-content-center">
+    <a href="#" class="d-block"><img src="./assets/images/logo.png" alt="logo"></a>
+  </h1>
 </div>
 </div>
 <div class="bg-gradient-primary">
-  <div class="text-center">
+  <div class="text-center mb-14">
   <p>台灣許多美景媲美國外，值此五倍券、國旅券及觀光業者加碼優惠盡出之際，旅行台灣就是現在！</p>
    <p> 到哪裡旅遊還沒有想法的民眾，歡迎到台灣觀光，體驗「台灣之美」! </p>
   </div>
+  <!-- weather -->
+  <ul class="container d-flex">
+    <li class="d-flex flex-column justify-content-center align-items-center w-20">
+        <h3 class="fz-18 fw-light mb-2">基隆市</h3>
+        <img src="./assets/images/weather-cloudy.png" class="d-block ratio ratio-1x1 square-70 mt-1 mb-3" alt="weather img">
+        <div class="d-flex fw-normal text-dark">
+          <p class="h1 lh-base">24</p>
+          <p class="h4 lh-base pt-1">&#176; C</p>
+        </div>
+      </li>
+      <li class="d-flex flex-column justify-content-center align-items-center w-20">
+        <h3 class="fz-18 fw-light mb-2">基隆市</h3>
+        <img src="./assets/images/weather-cloudy.png" class="d-block ratio ratio-1x1 square-70 mt-1 mb-3" alt="weather img">
+        <div class="d-flex fw-normal text-dark">
+          <p class="h1 lh-base">24</p>
+          <p class="h4 lh-base pt-1">&#176; C</p>
+        </div>
+      </li>
+      <li class="d-flex flex-column justify-content-center align-items-center w-20">
+        <h3 class="fz-18 fw-light mb-2">基隆市</h3>
+        <img src="./assets/images/weather-cloudy.png" class="d-block ratio ratio-1x1 square-70 mt-1 mb-3" alt="weather img">
+        <div class="d-flex fw-normal text-dark">
+          <p class="h1 lh-base">24</p>
+          <p class="h4 lh-base pt-1">&#176; C</p>
+        </div>
+      </li>
+      <li class="d-flex flex-column justify-content-center align-items-center w-20">
+        <h3 class="fz-18 fw-light mb-2">基隆市</h3>
+        <img src="./assets/images/weather-cloudy.png" class="d-block ratio ratio-1x1 square-70 mt-1 mb-3" alt="weather img">
+        <div class="d-flex fw-normal text-dark">
+          <p class="h1 lh-base">24</p>
+          <p class="h4 lh-base pt-1">&#176; C</p>
+        </div>
+      </li>
+      <li class="d-flex flex-column justify-content-center align-items-center w-20">
+        <h3 class="fz-18 fw-light mb-2">基隆市</h3>
+        <img src="./assets/images/weather-cloudy.png" class="d-block ratio ratio-1x1 square-70 mt-1 mb-3" alt="weather img">
+        <div class="d-flex fw-normal text-dark">
+          <p class="h1 lh-base">24</p>
+          <p class="h4 lh-base pt-1">&#176; C</p>
+        </div>
+      </li>
+  </ul>
 
+</div>
+
+<div class="container">
+  <ul class="row mb-14">
+    <li class="col-3">
+      <a href="#" class="d-block position-relative card-hover-shadow">
+        <img src="./assets/images/card-view.png" alt="card view" class="ratio ratio-28x39 d-block">
+        <p class="card-tag-top h2 me-1">景點</p>
+      </a>
+    </li>
+    <li class="col-3">
+      <a href="#" class="d-block position-relative card-hover-shadow">
+        <img src="./assets/images/card-food.png" alt="card view" class="ratio ratio-28x39">
+        <p class="card-tag-top h2 me-1">美食</p>
+      </a>
+    </li>
+    <li class="col-3">
+      <a href="#" class="d-block position-relative card-hover-shadow">
+        <img src="./assets/images/card-home.png" alt="card view" class="ratio ratio-28x39">
+        <p class="card-tag-top h2 me-1">住宿</p>
+      </a>
+    </li>
+    <li class="col-3">
+      <a href="#" class="d-block position-relative card-hover-shadow">
+        <img src="./assets/images/card-bus.png" alt="card view" class="ratio ratio-28x39">
+        <p class="card-tag-top h2 me-1">交通</p>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<div class="bg-primary py-3">
+  <div class="container d-flex justify-content-between">
+    <h2 class="text-white">熱門景點</h2>
+    <a href="#" class="btn btn-outline-light align-bottom">
+      <p class="align-middle">查看更多</p></a>
+  </div>
 </div>

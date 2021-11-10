@@ -1,6 +1,9 @@
 @import "../../../node_modules/bootstrap/scss/functions";
 @import "./helpers/variables";
+@import "../../../node_modules/bootstrap/scss/utilities";
+@import "./helpers/bootstrapUtil";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
-
-@import './layout/index.scss'
+@import './helpers/base';
+@import './components/card';
+@import './layout/index.scss';
