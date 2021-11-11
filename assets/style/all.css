@@ -18342,10 +18342,6 @@ img {
   border-radius: 30px;
 }
 
-.card-rounded > div > img {
-  border-radius: 30px;
-}
-
 .card-rounded > div {
   border-radius: 30px;
 }
@@ -18452,6 +18448,11 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  background-attachment: fixed;
+}
+
+.bg-img-top {
+  background-position: center top;
 }
 
 .bg-gradient-top {
@@ -18467,7 +18468,7 @@ img {
   background-image: -o-linear-gradient(#fff, #A7D4DA);
   background-image: linear-gradient(#fff, #A7D4DA);
   width: 100%;
-  height: 376px;
+  min-height: 376px;
 }
 
 .nav-link {
