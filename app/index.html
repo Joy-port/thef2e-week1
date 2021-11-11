@@ -88,25 +88,25 @@ current: index
 <nav class="container">
   <ul class="row mb-14">
     <li class="col-6 col-md-3 mb-5 mb-md-0">
-      <a href="view.html" class="d-block position-relative card-hover-shadow">
+      <a href="view.html" class="d-block position-relative card-hover-shadow-1">
         <img src="./assets/images/card-view.png" alt="card view" class="ratio ratio-28x39 d-block">
         <p class="card-tag-top h2 me-1">景點</p>
       </a>
     </li>
     <li class="col-6 col-md-3 mb-5 mb-md-0">
-      <a href="#" class="d-block position-relative card-hover-shadow">
+      <a href="#" class="d-block position-relative card-hover-shadow-1">
         <img src="./assets/images/card-food.png" alt="card view" class="ratio ratio-28x39">
         <p class="card-tag-top h2 me-1">美食</p>
       </a>
     </li>
     <li class="col-6 col-md-3">
-      <a href="#" class="d-block position-relative card-hover-shadow">
+      <a href="#" class="d-block position-relative card-hover-shadow-1">
         <img src="./assets/images/card-home.png" alt="card view" class="ratio ratio-28x39">
         <p class="card-tag-top h2 me-1">住宿</p>
       </a>
     </li>
     <li class="col-6 col-md-3">
-      <a href="#" class="d-block position-relative card-hover-shadow">
+      <a href="#" class="d-block position-relative card-hover-shadow-1">
         <img src="./assets/images/card-bus.png" alt="card view" class="ratio ratio-28x39">
         <p class="card-tag-top h2 me-1">交通</p>
       </a>
@@ -116,7 +116,7 @@ current: index
 
 <section>
 <div class="bg-primary py-3">
-  <div class="container d-flex justify-content-between">
+  <div class="container d-flex justify-content-between align-items-center">
     <h2 class="text-white">熱門景點</h2>
     <button type="button" class="btn btn-outline-light btn-long btn-long-primary">查看更多</button>
   </div>
@@ -124,13 +124,10 @@ current: index
 <div class="container py-17">
   <ul class="row">
     <li class="col-md-4 mb-5 mb-md-0">
-      <div class="card card-rounded">
-        <div
-          class="d-flex flex-column justify-content-between bg-img h-400 card-rounded"
-          style="
-            background-image: url(https://images.unsplash.com/photo-1601534621851-c19ba5464244?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
-          "
-        >
+      <div class="card card-rounded card-hover-shadow-2 h-100 position-relative">
+        <div class="ratio ratio-24x29 ratio-md-37x42 h-100">
+          <img class="card-bg-img h-100 card-rounded" src="https://images.unsplash.com/photo-1601534621851-c19ba5464244?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="img">
+          <div class="card-img-overlay d-flex flex-column justify-content-between h-100 p-0">
           <div class="d-flex justify-content-between p-5">
             <div class="card-btn-group">
               <a href="#" class="material-icons-outlined link-star">
@@ -153,10 +150,11 @@ current: index
               p-5
               bg-dark
               card-rounded-bottom
-              position-relative
+              h-20
             "
           >
-            <h3 class="h3 text-white text-shadow"> <a href="#"class="link-light stretched-link">台北101</a></h3>
+            <h3 class="h3 text-white text-shadow"> 
+            <a href="#"class="link-light stretched-link">台北101</a></h3>
             <div class="d-flex align-items-center text-white">
               <span class="material-icons-outlined align-items-center">
                 location_on
@@ -165,16 +163,14 @@ current: index
             </div>
           </div>
         </div>
+      </div>
       </div>
     </li>
     <li class="col-md-4 mb-5 mb-md-0">
-      <div class="card card-rounded">
-        <div
-          class="d-flex flex-column justify-content-between bg-img h-400 card-rounded"
-          style="
-            background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Chiang_Kai-shek_memorial_amk.jpg/560px-Chiang_Kai-shek_memorial_amk.jpg);
-          "
-        >
+      <div class="card card-rounded card-hover-shadow-2 h-100 position-relative">
+        <div class="ratio ratio-24x29 ratio-md-37x42 h-100">
+          <img class="card-bg-img h-100 card-rounded" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Chiang_Kai-shek_memorial_amk.jpg/560px-Chiang_Kai-shek_memorial_amk.jpg" alt="img">
+          <div class="card-img-overlay d-flex flex-column justify-content-between h-100 p-0">
           <div class="d-flex justify-content-between p-5">
             <div class="card-btn-group">
               <a href="#" class="material-icons-outlined link-star">
@@ -197,10 +193,11 @@ current: index
               p-5
               bg-dark
               card-rounded-bottom
-              position-relative
+              h-20
             "
           >
-            <h3 class="h3 text-white text-shadow"><a href="#"class="link-light stretched-link">中正紀念堂</a></h3>
+            <h3 class="h3 text-white text-shadow"> 
+            <a href="#"class="link-light stretched-link">中正紀念堂</a></h3>
             <div class="d-flex align-items-center text-white">
               <span class="material-icons-outlined align-items-center">
                 location_on
@@ -210,9 +207,10 @@ current: index
           </div>
         </div>
       </div>
+      </div>
     </li>
-    <li class="col-md-4">
-      <div class="card card-rounded">
+    <!-- <li class="col-md-4">
+      <div class="card card-rounded card-hover-shadow-2">
         <div
           class="d-flex flex-column justify-content-between bg-img h-400 card-rounded"
           style="
@@ -255,14 +253,14 @@ current: index
           </div>
         </div>
       </div>
-    </li>
+    </li> -->
   </ul>
 </div>
 </section>
 
 <section>
 <div class="bg-success py-3">
-  <div class="container d-flex justify-content-between">
+  <div class="container d-flex justify-content-between align-items-center">
     <h2 class="text-white">熱門美食</h2>
     <button type="button" class="btn btn-outline-light btn-long btn-long-success">查看更多</button>
   </div>
@@ -270,9 +268,10 @@ current: index
 <div class="container py-17">
   <ul class="row">
     <li class="col-md-4 mb-5 mb-md-0">
-      <div class="card card-border card-rounded h-100">
+      <div class="card card-border card-rounded card-hover-shadow-2 bg-transparent">
         <div class="position-relative">
-          <img src="./assets/images/foodie-1.png" alt="img" class="card-img-top">
+          <a href="#" class="stretched-link ratio-24x17 ratio-md-36x25">
+          <img src="./assets/images/foodie-1.png" alt="img" class="card-bg-img card-rounded-top"></a>
           <div class="card-btn-group card-top-start">
             <a href="#" class="material-icons-outlined link-star">
               star
@@ -288,7 +287,6 @@ current: index
               bookmark_border
               </span>
           </a>
-
         </div>
         <div class="card-body py-2 px-5">
         <div class="d-flex align-items-center flex-wrap gap-3 mb-6">
@@ -307,9 +305,9 @@ current: index
       </div>
     </li>
     <li class="col-md-4 mb-5 mb-md-0">
-      <div class="card card-border card-rounded h-100">
-        <div class="position-relative">
-          <img src="./assets/images/foodie-2.png" alt="img" class="card-img-top">
+      <div class="card card-border card-rounded">
+        <a href="#" class="stretched-link ratio-24x17 ratio-md-36x25">
+          <img src="./assets/images/foodie-2.png" alt="img" class="card-bg-img card-rounded-top h-100"></a>
           <div class="card-btn-group card-top-start">
             <a href="#" class="material-icons-outlined link-star">
               star
@@ -324,9 +322,7 @@ current: index
             <span class="material-icons-outlined align-middle">
               bookmark_border
               </span>
-          </a>
-
-        </div>
+            </a>
         <div class="card-body py-2 px-5">
         <div class="d-flex align-items-center flex-wrap gap-3 mb-6">
           <h3 class="h3 text-black">胡切仔麵</h3>
@@ -345,8 +341,8 @@ current: index
     </li>
     <li class="col-md-4 mb-5 mb-md-0">
       <div class="card card-border card-rounded h-100">
-        <div class="position-relative">
-          <img src="./assets/images/foodie-3.png" alt="img" class="card-img-top">
+        <a href="#" class="stretched-link ratio-24x17 ratio-md-36x25">
+          <img src="./assets/images/foodie-3.png" alt="img" class="card-bg-img card-rounded-top"></a>
           <div class="card-btn-group card-top-start">
             <a href="#" class="material-icons-outlined link-star">
               star
@@ -362,22 +358,20 @@ current: index
               bookmark_border
               </span>
           </a>
-
-        </div>
-        <div class="card-body py-2 px-5">
-        <div class="d-flex align-items-center flex-wrap gap-3 mb-6">
-          <h3 class="h3 text-black">胡切仔麵</h3>
-          <div class="d-flex align-items-center text-dark">
-            <span class="material-icons-outlined align-items-center">
-              location_on
-              </span>
-              新北市
+          <div class="card-body py-2 px-5">
+          <div class="d-flex align-items-center flex-wrap gap-3 mb-6">
+            <h3 class="h3 text-black">胡切仔麵</h3>
+            <div class="d-flex align-items-center text-dark">
+              <span class="material-icons-outlined align-items-center">
+                location_on
+                </span>
+                新北市
+            </div>
           </div>
+          <a href="#" class="link-dark">南投縣545埔里鎮新生路10號 </a>
+          <p class="text-dark">營業時間：<span>16:00-22:00</span></p>
+          <p class="text-dark">電話：<a href="tel:+04-92994225" class="link-dark d-inline">04-92994225</a></p>
         </div>
-        <a href="#" class="link-dark">南投縣545埔里鎮新生路10號 </a>
-        <p class="text-dark">營業時間：<span>16:00-22:00</span></p>
-        <p class="text-dark">電話：<a href="tel:+04-92994225" class="link-dark d-inline">04-92994225</a></p>
-      </div>
       </div>
     </li>
   </ul>
@@ -386,7 +380,7 @@ current: index
 
 <section>
 <div class="bg-orange py-3">
-  <div class="container d-flex justify-content-between">
+  <div class="container d-flex justify-content-between align-items-center">
     <h2 class="text-white">住宿推薦</h2>
     <button type="button" class="btn btn-outline-light btn-long btn-long-orange">查看更多</button>
   </div>
@@ -395,8 +389,8 @@ current: index
   <ul class="row">
     <li class="col-md-4 mb-5 mb-md-0">
       <div class="card card-border card-rounded h-100">
-        <div class="position-relative">
-          <img src="./assets/images/hotel-1.png" alt="img" class="card-img-top">
+        <a href="#" class="stretched-link ratio-24x17 ratio-md-36x25">
+          <img src="./assets/images/hotel-1.png" alt="img" class="card-bg-img card-rounded-top"></a>
           <div class="card-btn-group card-top-start">
             <a href="#" class="material-icons-outlined link-star">
               star
@@ -412,8 +406,6 @@ current: index
               bookmark_border
               </span>
           </a>
-
-        </div>
         <div class="card-body py-2 px-5">
         <div class="d-flex align-items-center flex-wrap gap-3 mb-6">
           <h3 class="h3 text-black">慕夏四季海景民宿</h3>
@@ -432,8 +424,8 @@ current: index
     </li>
     <li class="col-md-4 mb-5 mb-md-0">
       <div class="card card-border card-rounded h-100">
-        <div class="position-relative">
-          <img src="./assets/images/hotel-2.png" alt="img" class="card-img-top">
+        <a href="#" class="stretched-link ratio-24x17 ratio-md-36x25">
+          <img src="./assets/images/hotel-2.png" alt="img" class="card-bg-img card-rounded-top"></a>
           <div class="card-btn-group card-top-start">
             <a href="#" class="material-icons-outlined link-star">
               star
@@ -449,8 +441,6 @@ current: index
               bookmark_border
               </span>
           </a>
-
-        </div>
         <div class="card-body py-2 px-5">
         <div class="d-flex align-items-center flex-wrap gap-3 mb-6">
           <h3 class="h3 text-black">慕夏四季海景民宿</h3>
@@ -469,8 +459,8 @@ current: index
     </li>
     <li class="col-md-4 mb-5 mb-md-0">
       <div class="card card-border card-rounded h-100">
-        <div class="position-relative">
-          <img src="./assets/images/hotel-3.png" alt="img" class="card-img-top">
+        <a href="#" class="stretched-link ratio-24x17 ratio-md-36x25">
+          <img src="./assets/images/hotel-3.png" alt="img" class="card-bg-img card-rounded-top"></a>
           <div class="card-btn-group card-top-start">
             <a href="#" class="material-icons-outlined link-star">
               star
@@ -486,8 +476,6 @@ current: index
               bookmark_border
               </span>
           </a>
-
-        </div>
         <div class="card-body py-2 px-5">
         <div class="d-flex align-items-center flex-wrap gap-3 mb-6">
           <h3 class="h3 text-black">慕夏四季海景民宿</h3>

@@ -1,53 +1,16 @@
-.nav-link{
-  color: $gray-800;
-  font-weight: 700;
-  position: relative;
-  &:not(:last-child)::after{
-    content: '';
-    position: absolute;
-    width: 2px;
-    height: 1.5rem;
-    border-right: 2px solid $gray-800;
-    line-height: 1.5rem; 
-    right: 0;
-  }
-}
-
-.square-70{
-  width: 70px;
-  height: 70px;
-}
-.fz-18{
+.fz-18 {
   font-size: 18px;
 }
-.fz-24{
+.fz-24 {
   font-size: 24px;
 }
-.fz-28{
+.fz-28 {
   font-size: 28px;
 }
 
-.h-400{
-  height: 400px;
-}
-.h-300{
-  height: 300px;
-}
-.h-700{
-  max-height: 700px;
-}
-.link-dark{
-  color: $gray-800;
-  &:hover{
-    color: $gray-900;
-  }
-}
-.logo{
-  text-indent: 101%;
-  overflow: hidden;
-  white-space: nowrap;
-  height: 200px;
-}
-.h-256{
-  height: 256px;
+.text-shadow {
+  /* Add the blur effect */
+  -moz-text-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-text-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.25);
 }

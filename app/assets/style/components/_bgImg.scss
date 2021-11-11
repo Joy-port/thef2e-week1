@@ -1,36 +1,35 @@
-.bg-img{
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-  }
-  
-  .bg-img-top{
-    background-position: center top;
-  }
-  .bg-gradient-primary{
-    background-color: #A7D4DA91;
-  }
-  .bg-gradient-top{
-    background-image: linear-gradient($cyan,  $white);
-    width: 100%;
-    height: 366px;
-  
-  }
-  .bg-gradient-bottom{
-    background-image: linear-gradient($white, $cyan);
-    width: 100%;
-    min-height: 376px;
-  }
-  .bg-shadow{
-    /* Add the blur effect */
-    -moz-box-shadow:    inset 0 4px 4px rgba(0,0,0,0.25);
-    -webkit-box-shadow: inset 0 4px 4px rgba(0,0,0,0.25);
-    box-shadow:         inset 0 4px 4px rgba(0,0,0,0.25);
-  }
+.bg-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
 
-  .text-shadow{
-      /* Add the blur effect */
-    -moz-text-shadow:    0 0 4px 4px rgba(0,0,0,0.25);
-    -webkit-text-shadow: 0 0 4px 4px rgba(0,0,0,0.25);
-    text-shadow:         0 0 4px 4px rgba(0,0,0,0.25);
-  }
+.bg-img-top {
+  background-position: center top;
+}
+.bg-gradient-primary {
+  background-color: #a7d4da91;
+}
+.bg-gradient-top-cyan {
+  background-image: linear-gradient($cyan, $white);
+  width: 100%;
+  height: 366px;
+}
+.bg-gradient-bottom-cyan {
+  background-image: linear-gradient($white, $cyan);
+  width: 100%;
+  min-height: 376px;
+}
+
+.bg-gradient-top-teal{
+    background-image: linear-gradient($teal, $white);
+    width: 100%;
+}
+.bg-shadow {
+  /* Add the blur effect */
+  -moz-box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
