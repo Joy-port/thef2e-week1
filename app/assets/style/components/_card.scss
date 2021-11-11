@@ -30,15 +30,23 @@
         }
     }
 }
+.card{
+    border-radius: 30px;
+}
 
 .card-rounded{
     border: 0;
     border-radius: 30px;
-
-    &>div{
-        border-radius: 30px;
-    }
 }
+.card-rounded-top{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+ }
+.card-rounded-bottom{
+   border-bottom-left-radius: 30px;
+   border-bottom-right-radius: 30px;
+}
+
 .card-bg-img{
     width: 100%;
     object-fit: cover;

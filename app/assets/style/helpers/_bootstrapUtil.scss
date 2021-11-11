@@ -125,6 +125,14 @@ $utilities: map-merge(
         map-get($utilities, "rounded"),
         (
           responsive: true,
+          values:
+          map-merge(
+            map-get(map-get($utilities, "rounded"), "values"),
+            (
+              3: $border-radius-md, //edit
+              4: $border-radius-lg //edit
+            )
+          ),
         )
       ),
       "rounded-top":
@@ -139,6 +147,14 @@ $utilities: map-merge(
         map-get($utilities, "rounded-end"),
         (
           responsive: true,
+          values:
+          map-merge(
+            map-get(map-get($utilities, "rounded"), "values"),
+            (
+              3: $border-radius-md, //edit
+              4: $border-radius-lg //edit
+            )
+          ),
         )
       ),
       "rounded-bottom":
@@ -146,6 +162,14 @@ $utilities: map-merge(
         map-get($utilities, "rounded-bottom"),
         (
           responsive: true,
+          values:
+          map-merge(
+            map-get(map-get($utilities, "rounded"), "values"),
+            (
+              3: $border-radius-md, //edit
+              4: $border-radius-lg //edit
+            )
+          ),
         )
       ),
       "rounded-start":
@@ -153,6 +177,14 @@ $utilities: map-merge(
         map-get($utilities, "rounded-start"),
         (
           responsive: true,
+          values:
+          map-merge(
+            map-get(map-get($utilities, "rounded"), "values"),
+            (
+              3: $border-radius-md, //edit
+              4: $border-radius-lg //edit
+            )
+          ),
         )
       ),
     "ratio":(property: --bs-aspect-ratio,
