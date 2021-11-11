@@ -1,0 +1,20 @@
+.bg-img{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  .bg-img-top{
+    background-position: center top;
+  }
+  .bg-gradient-top{
+    background-image: linear-gradient($cyan,  $white);
+    width: 100%;
+    height: 366px;
+  
+  }
+  .bg-gradient-bottom{
+    background-image: linear-gradient($white, $cyan);
+    width: 100%;
+    min-height: 376px;
+  }

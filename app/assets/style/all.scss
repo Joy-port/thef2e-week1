@@ -5,7 +5,9 @@
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
 @import './helpers/base';
+@import './components/bgImg';
 @import './components/card';
 @import './components/btn';
+@import './components/input';
 
 @import './layout/index.scss';

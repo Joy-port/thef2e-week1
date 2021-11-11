@@ -1,0 +1,12 @@
+.input-search{
+    border: 0px solid #000;
+    border-radius: 0.5rem;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    &::placeholder{
+        color: $gray-700;
+        font-weight: 700;
+    }
+}

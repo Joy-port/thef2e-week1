@@ -1,25 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title><%- title %></title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
-    <link rel="stylesheet" href="./assets/style/all.css">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/style/all.css" />
   </head>
 
   <body>
-
-
-    <%- contents %>
+    <!-- navbar -->
+    <% switch (current) { case 'index' : %>
+    <div
+      class="bg-banner bg-img bg-img-top vh-100 pt-7"
+      style="background-image: url(./assets/images/banner-index-logo.png)"
+    >
+      <%- include('./components/navbar.ejs') %>
+    </div>
+    <% break; case 'view' : %>
+    <div
+      class="bg-banner bg-img bg-img-top h-700 pt-7"
+      style="background-image: url(./assets/images/banner-location-logo.png)"
+    >
+      <%- include('./components/navbar.ejs') %>
+    </div>
+    <% break; case 'hotel' : %>
+    <div
+      class="bg-banner bg-img bg-img-top h-700 pt-7"
+      style="background-image: url(./assets/images/banner-hotel-logo.png)"
+    >
+      <%- include('./components/navbar.ejs') %>
+    </div>
+    <% break; case 'food' : %>
+    <div
+      class="bg-banner bg-img bg-img-top h-700 pt-7"
+      style="background-image: url(./assets/images/banner-food-logo.png)"
+    >
+      <%- include('./components/navbar.ejs') %>
+    </div>
+    <% break; } %> 
+    
+    <%- contents %> 
+    
     <%- include('./components/footer.ejs') %>
 
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>
-
 </html>
