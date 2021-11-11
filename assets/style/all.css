@@ -540,6 +540,18 @@ progress {
   }
 }
 
+.display-7 {
+  font-size: calc(1.275rem + 0.3vw);
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+@media (min-width: 1200px) {
+  .display-7 {
+    font-size: 1.5rem;
+  }
+}
+
 .list-unstyled {
   padding-left: 0;
   list-style: none;
@@ -8083,6 +8095,10 @@ fieldset:disabled .btn {
   --bs-aspect-ratio: calc(9 / 21 * 100%);
 }
 
+.ratio-65x37 {
+  --bs-aspect-ratio: calc(370/655 *100);
+}
+
 .fixed-top {
   position: fixed;
   top: 0;
@@ -10610,6 +10626,10 @@ fieldset:disabled .btn {
   --bs-aspect-ratio: calc(9 / 21 * 100%) !important;
 }
 
+.ratio-65x37 {
+  --bs-aspect-ratio: calc(370/655 *100) !important;
+}
+
 @media (min-width: 576px) {
   .float-sm-start {
     float: left !important;
@@ -12123,6 +12143,9 @@ fieldset:disabled .btn {
   }
   .ratio-sm-21x9 {
     --bs-aspect-ratio: calc(9 / 21 * 100%) !important;
+  }
+  .ratio-sm-65x37 {
+    --bs-aspect-ratio: calc(370/655 *100) !important;
   }
 }
 
@@ -13640,6 +13663,9 @@ fieldset:disabled .btn {
   .ratio-md-21x9 {
     --bs-aspect-ratio: calc(9 / 21 * 100%) !important;
   }
+  .ratio-md-65x37 {
+    --bs-aspect-ratio: calc(370/655 *100) !important;
+  }
 }
 
 @media (min-width: 992px) {
@@ -15155,6 +15181,9 @@ fieldset:disabled .btn {
   }
   .ratio-lg-21x9 {
     --bs-aspect-ratio: calc(9 / 21 * 100%) !important;
+  }
+  .ratio-lg-65x37 {
+    --bs-aspect-ratio: calc(370/655 *100) !important;
   }
 }
 
@@ -16672,6 +16701,9 @@ fieldset:disabled .btn {
   .ratio-xl-21x9 {
     --bs-aspect-ratio: calc(9 / 21 * 100%) !important;
   }
+  .ratio-xl-65x37 {
+    --bs-aspect-ratio: calc(370/655 *100) !important;
+  }
 }
 
 @media (min-width: 1400px) {
@@ -18188,6 +18220,9 @@ fieldset:disabled .btn {
   .ratio-xxl-21x9 {
     --bs-aspect-ratio: calc(9 / 21 * 100%) !important;
   }
+  .ratio-xxl-65x37 {
+    --bs-aspect-ratio: calc(370/655 *100) !important;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -18296,6 +18331,32 @@ a {
 img {
   max-width: 100%;
   display: block;
+}
+
+.bg-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.bg-img-top {
+  background-position: center top;
+}
+
+.bg-gradient-top {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#A7D4DA), to(#fff));
+  background-image: -o-linear-gradient(#A7D4DA, #fff);
+  background-image: linear-gradient(#A7D4DA, #fff);
+  width: 100%;
+  height: 366px;
+}
+
+.bg-gradient-bottom {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#A7D4DA));
+  background-image: -o-linear-gradient(#fff, #A7D4DA);
+  background-image: linear-gradient(#fff, #A7D4DA);
+  width: 100%;
+  min-height: 376px;
 }
 
 .card-tag-top {
@@ -18444,31 +18505,38 @@ img {
   background-color: #ffffff91;
 }
 
-.bg-img {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
+.input-search {
+  border: 0px solid #000;
+  border-radius: 0.5rem;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
-.bg-img-top {
-  background-position: center top;
+.input-search::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: 700;
 }
 
-.bg-gradient-top {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#A7D4DA), to(#fff));
-  background-image: -o-linear-gradient(#A7D4DA, #fff);
-  background-image: linear-gradient(#A7D4DA, #fff);
-  width: 100%;
-  height: 366px;
+.input-search::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: 700;
 }
 
-.bg-gradient-bottom {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#A7D4DA));
-  background-image: -o-linear-gradient(#fff, #A7D4DA);
-  background-image: linear-gradient(#fff, #A7D4DA);
-  width: 100%;
-  min-height: 376px;
+.input-search:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: 700;
+}
+
+.input-search::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: 700;
+}
+
+.input-search::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: 700;
 }
 
 .nav-link {
@@ -18506,6 +18574,14 @@ img {
 
 .h-400 {
   height: 400px;
+}
+
+.h-300 {
+  height: 300px;
+}
+
+.h-700 {
+  max-height: 700px;
 }
 
 .link-dark {
