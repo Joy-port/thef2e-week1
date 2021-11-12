@@ -23337,9 +23337,9 @@ button {
 }
 
 .card-hover-shadow-2 {
-  -webkit-transition: all .3s linear;
-  -o-transition: all .3s linear;
-  transition: all .3s linear;
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
 }
 
 .card-hover-shadow-2:hover {
