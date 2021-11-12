@@ -15,6 +15,14 @@
   width: 100%;
   min-height: 366px;
 }
+.bg-gradient-top-cyan-md {
+  @include media-breakpoint-up(md) {
+    background-image: linear-gradient($cyan, $white);
+    width: 100%;
+    min-height: 366px;
+  }
+  
+}
 .bg-gradient-bottom-cyan {
   background-image: linear-gradient($white, $cyan);
   width: 100%;

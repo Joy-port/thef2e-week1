@@ -33,4 +33,13 @@
         background-color: $gray-700;
         color: $white;
     }
+
+    &.active{
+        background-color: $gray-700;
+        color: $white;
+    }
+    &.disabled{
+        opacity: 0.5;
+        pointer-events: none;
+    }
 }

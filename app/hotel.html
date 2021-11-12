@@ -4,22 +4,25 @@ layout: ./app/layout.ejs
 engine: ejs
 current: hotel
 ---
-<div class="bg-gradient-top-yellow h-300">    
-</div>
+<div class="bg-gradient-top-yellow py-16">
 <div class="container">
     <ul class="row">
         <li class="col-4">
-            <div class="card rounded-5">
-                <img src="https://images.unsplash.com/photo-1516669714-420e67a668ee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="img">
+            <a href="#" class="card rounded-5 card-hover-filter">
+                    <img class="rounded-5" src="https://images.unsplash.com/photo-1516669714-420e67a668ee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="img">
+               
                 <div class="card-img-overlay">
-                    <h3 class="h1"><a href="#" class="link-white">台北</a></h3>
-                    <p class="text-white"><span>650</span>間住宿</p>
+                    <h3 class="h1 text-white mb-1">台北</h3>
+                    <p class="text-white"> <span>650</span> 間住宿</p>
                 </div>
-            </div>
+                <div class="card-img-overlay card-hover-icon d-flex justify-content-center align-items-center">
+                <img class="square-80" src="./assets/images/icon-hotel.svg" alt="icon"></div>
+            </a>
         </li>
         <li class="col-4"></li>
         <li class="col-4">
-            <img src="https://images.unsplash.com/photo-1516669714-420e67a668ee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="img">
+            <img class="text-light" src="https://images.unsplash.com/photo-1516669714-420e67a668ee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="img" style="">
         </li>
     </ul>
+</div>
 </div>

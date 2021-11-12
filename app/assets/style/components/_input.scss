@@ -1,12 +1,34 @@
 .input-search{
-    border: 0px solid #000;
-    border-radius: 0.5rem;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    border-radius: 0.625rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    @include media-breakpoint-up(md) {
+        border: 0px solid #000;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    
     &::placeholder{
         color: $gray-700;
         font-weight: 700;
     }
+}
+
+input{
+    border-radius: 10px;
+}
+
+.form-control{
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    @include media-breakpoint-up(md) {
+        padding: 0.875rem;
+      }
+
 }

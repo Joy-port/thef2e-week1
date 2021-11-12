@@ -17,7 +17,7 @@
 }
 
 .card-hover-shadow-1{
-    transition: all 1s ease;
+    transition: all .3s linear;
     border-radius: 10px;
 
     &:hover{
@@ -40,6 +40,7 @@
       }
 }
 .card-hover-shadow-2{
+    transition: all .3s linear;
     &:hover{
         box-shadow: 6px 6px 7px 0 rgba(0,0,0,.25);
     }
@@ -136,7 +137,8 @@
 
 .card-hover-filter{
     position: relative;
-    &:hover::after{
+    transition: all .3s linear;
+    &:hover::before{
         content: '';
         position: absolute;
         width: 100%;
@@ -150,21 +152,21 @@
 }
 
 .card-hover-filter-start{
-    &:hover::after{
+    &:hover::before{
         border-radius: 0;
         border-top-left-radius: 30px;
         border-bottom-left-radius: 30px;
     }
 }
 .card-hover-filter-middle{
-    &:hover::after{
+    &:hover::before{
        
        border-radius: 0;
     }
 }
 
 .card-hover-filter-end{
-    &:hover::after{
+    &:hover::before{
         border-radius: 0;
         border-top-right-radius: 30px;
         border-bottom-right-radius: 30px;
@@ -174,4 +176,15 @@
 
 .card-light-filter{
     background-color:rgba(251,251,251,.4) ;
+}
+
+.card-hover-icon{
+    opacity: 0;
+    z-index: 1201;
+    transition: transform .3s cubic-bezier(0.21, 2.73, 0.85,-1.78), opacity .2s;
+    transform: scale(.85) ;
+    &:hover{
+        opacity: 1;
+        transform: scale(1);
+    }
 }
