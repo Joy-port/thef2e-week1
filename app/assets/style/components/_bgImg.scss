@@ -13,7 +13,7 @@
 .bg-gradient-top-cyan {
   background-image: linear-gradient($cyan, $white);
   width: 100%;
-  height: 366px;
+  min-height: 366px;
 }
 .bg-gradient-bottom-cyan {
   background-image: linear-gradient($white, $cyan);
@@ -24,6 +24,9 @@
 .bg-gradient-top-teal{
     background-image: linear-gradient($teal, $white);
     width: 100%;
+}
+.bg-teal{
+    background-color: $teal;
 }
 .bg-shadow {
   /* Add the blur effect */

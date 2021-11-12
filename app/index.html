@@ -33,13 +33,13 @@ current: index
     </h1>
 </div>
 </div> -->
-<div class="bg-gradient-top">
+<div class="bg-gradient-top-cyan">
   <div class="container text-center text-dark mb-14">
   <p>台灣許多美景媲美國外，值此五倍券、國旅券及觀光業者加碼優惠盡出之際，旅行台灣就是現在！</p>
    <p> 到哪裡旅遊還沒有想法的民眾，歡迎到台灣觀光，體驗「台灣之美」! </p>
   </div>
   <!-- weather -->
-  <ul class="container d-flex">
+  <ul class="container d-flex mb-5">
     <li class="d-flex flex-column justify-content-center align-items-center w-20">
         <h3 class="fz-18 fw-light mb-2">基隆市</h3>
         <img src="./assets/images/weather-cloudy.png" class="d-block ratio ratio-1x1 square-70 mt-1 mb-3" alt="weather img">
@@ -124,10 +124,8 @@ current: index
 <div class="container py-17">
   <ul class="row">
     <li class="col-md-4 mb-5 mb-md-0">
-      <div class="card card-rounded card-hover-shadow-2 h-100 position-relative">
-        <div class="ratio ratio-24x29 ratio-md-37x42 h-100">
-          <img class="card-bg-img h-100 card-rounded" src="https://images.unsplash.com/photo-1601534621851-c19ba5464244?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="img">
-          <div class="card-img-overlay d-flex flex-column justify-content-between h-100 p-0">
+      <button type="button" class="card card-rounded card-hover-filter w-100" >
+        <div class="d-flex flex-column justify-content-between bg-img h-400 card-rounded" style="background-image: url(https://images.unsplash.com/photo-1601534621851-c19ba5464244?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);">
           <div class="d-flex justify-content-between p-5">
             <div class="card-btn-group">
               <a href="#" class="material-icons-outlined link-star">
@@ -148,13 +146,13 @@ current: index
               d-flex
               justify-content-between
               p-5
+              flex-wrap
+              gap-3
               bg-dark
               card-rounded-bottom
-              h-20
             "
           >
-            <h3 class="h3 text-white text-shadow"> 
-            <a href="#"class="link-light stretched-link">台北101</a></h3>
+            <h3 class="h3 text-white text-shadow">台北101</h3>
             <div class="d-flex align-items-center text-white">
               <span class="material-icons-outlined align-items-center">
                 location_on
@@ -163,14 +161,16 @@ current: index
             </div>
           </div>
         </div>
-      </div>
-      </div>
+        </button>
     </li>
     <li class="col-md-4 mb-5 mb-md-0">
-      <div class="card card-rounded card-hover-shadow-2 h-100 position-relative">
-        <div class="ratio ratio-24x29 ratio-md-37x42 h-100">
-          <img class="card-bg-img h-100 card-rounded" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Chiang_Kai-shek_memorial_amk.jpg/560px-Chiang_Kai-shek_memorial_amk.jpg" alt="img">
-          <div class="card-img-overlay d-flex flex-column justify-content-between h-100 p-0">
+      <button type="button" class="card card-rounded card-hover-filter w-100">
+        <div
+          class="d-flex flex-column justify-content-between bg-img h-400 card-rounded"
+          style="
+            background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Chiang_Kai-shek_memorial_amk.jpg/560px-Chiang_Kai-shek_memorial_amk.jpg);
+          "
+        >
           <div class="d-flex justify-content-between p-5">
             <div class="card-btn-group">
               <a href="#" class="material-icons-outlined link-star">
@@ -191,13 +191,14 @@ current: index
               d-flex
               justify-content-between
               p-5
+              flex-wrap
+              gap-3
               bg-dark
               card-rounded-bottom
-              h-20
             "
           >
-            <h3 class="h3 text-white text-shadow"> 
-            <a href="#"class="link-light stretched-link">中正紀念堂</a></h3>
+            <h3 class="h3 text-white text-shadow">
+              <a href="#"class="link-light stretched-link">中正紀念堂</a></h3>
             <div class="d-flex align-items-center text-white">
               <span class="material-icons-outlined align-items-center">
                 location_on
@@ -206,11 +207,10 @@ current: index
             </div>
           </div>
         </div>
-      </div>
-      </div>
+      </button>
     </li>
-    <!-- <li class="col-md-4">
-      <div class="card card-rounded card-hover-shadow-2">
+    <li class="col-md-4">
+      <button type="button" class="card card-rounded card-hover-filter w-100">
         <div
           class="d-flex flex-column justify-content-between bg-img h-400 card-rounded"
           style="
@@ -237,13 +237,14 @@ current: index
               d-flex
               justify-content-between
               p-5
+              flex-wrap
+              gap-3
               bg-dark
               card-rounded-bottom
-              position-relative
             "
           >
             <h3 class="h3 text-white text-shadow">
-                <a href="#"class="link-light stretched-link">九份</a></h3>
+              <a href="#"class="link-light stretched-link">九份</a></h3>
             <div class="d-flex align-items-center text-white">
               <span class="material-icons-outlined align-items-center">
                 location_on
@@ -252,8 +253,8 @@ current: index
             </div>
           </div>
         </div>
-      </div>
-    </li> -->
+      </button>
+    </li>
   </ul>
 </div>
 </section>
@@ -305,9 +306,10 @@ current: index
       </div>
     </li>
     <li class="col-md-4 mb-5 mb-md-0">
-      <div class="card card-border card-rounded">
+      <div class="card card-border card-rounded card-hover-shadow-2">
+        <div class="position-relative">
         <a href="#" class="stretched-link ratio-24x17 ratio-md-36x25">
-          <img src="./assets/images/foodie-2.png" alt="img" class="card-bg-img card-rounded-top h-100"></a>
+          <img src="./assets/images/foodie-2.png" alt="img" class="card-bg-img card-rounded-top h-100"></a></div>
           <div class="card-btn-group card-top-start">
             <a href="#" class="material-icons-outlined link-star">
               star
@@ -340,9 +342,10 @@ current: index
       </div>
     </li>
     <li class="col-md-4 mb-5 mb-md-0">
-      <div class="card card-border card-rounded h-100">
+      <div class="card card-border card-rounded card-hover-shadow-2 h-100">
+        <div class="position-relative">
         <a href="#" class="stretched-link ratio-24x17 ratio-md-36x25">
-          <img src="./assets/images/foodie-3.png" alt="img" class="card-bg-img card-rounded-top"></a>
+          <img src="./assets/images/foodie-3.png" alt="img" class="card-bg-img card-rounded-top"></a></div>
           <div class="card-btn-group card-top-start">
             <a href="#" class="material-icons-outlined link-star">
               star
@@ -388,9 +391,10 @@ current: index
 <div class="container py-17">
   <ul class="row">
     <li class="col-md-4 mb-5 mb-md-0">
-      <div class="card card-border card-rounded h-100">
+      <div class="card card-border card-rounded card-hover-shadow-2 h-100">
+        <div class="position-relative">
         <a href="#" class="stretched-link ratio-24x17 ratio-md-36x25">
-          <img src="./assets/images/hotel-1.png" alt="img" class="card-bg-img card-rounded-top"></a>
+          <img src="./assets/images/hotel-1.png" alt="img" class="card-bg-img card-rounded-top"></a></div>
           <div class="card-btn-group card-top-start">
             <a href="#" class="material-icons-outlined link-star">
               star
@@ -423,9 +427,10 @@ current: index
       </div>
     </li>
     <li class="col-md-4 mb-5 mb-md-0">
-      <div class="card card-border card-rounded h-100">
+      <div class="card card-border card-rounded card-hover-shadow-2 h-100">
+        <div class="position-relative">
         <a href="#" class="stretched-link ratio-24x17 ratio-md-36x25">
-          <img src="./assets/images/hotel-2.png" alt="img" class="card-bg-img card-rounded-top"></a>
+          <img src="./assets/images/hotel-2.png" alt="img" class="card-bg-img card-rounded-top"></a></div>
           <div class="card-btn-group card-top-start">
             <a href="#" class="material-icons-outlined link-star">
               star
@@ -458,9 +463,10 @@ current: index
       </div>
     </li>
     <li class="col-md-4 mb-5 mb-md-0">
-      <div class="card card-border card-rounded h-100">
+      <div class="card card-border card-rounded card-hover-shadow-2 h-100">
+        <div class="position-relative">
         <a href="#" class="stretched-link ratio-24x17 ratio-md-36x25">
-          <img src="./assets/images/hotel-3.png" alt="img" class="card-bg-img card-rounded-top"></a>
+          <img src="./assets/images/hotel-3.png" alt="img" class="card-bg-img card-rounded-top"></a></div>
           <div class="card-btn-group card-top-start">
             <a href="#" class="material-icons-outlined link-star">
               star
