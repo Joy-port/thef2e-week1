@@ -36,3 +36,19 @@
 }
 
 
+.bg-gradient-bottom-teal {
+  background-image: linear-gradient($white, $teal);
+  width: 100%;
+  min-height: 376px;
+}
+
+.bg-gradient-bottom-yellow {
+  background-image: linear-gradient($white, $yellow);
+  width: 100%;
+  min-height: 376px;
+}
+
+.bg-gradient-top-yellow {
+  background-image: linear-gradient($yellow, $white);
+  width: 100%;
+}

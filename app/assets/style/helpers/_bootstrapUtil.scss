@@ -130,7 +130,9 @@ $utilities: map-merge(
             map-get(map-get($utilities, "rounded"), "values"),
             (
               3: $border-radius-md, //edit
-              4: $border-radius-lg //edit
+              4: $border-radius-lg, //edit
+              5: $border-radius-xl,
+              6: $border-radius-xxl
             )
           ),
         )
@@ -152,7 +154,9 @@ $utilities: map-merge(
             map-get(map-get($utilities, "rounded"), "values"),
             (
               3: $border-radius-md, //edit
-              4: $border-radius-lg //edit
+              4: $border-radius-lg, //edit
+              5: $border-radius-xl,
+              6: $border-radius-xxl
             )
           ),
         )
@@ -167,7 +171,9 @@ $utilities: map-merge(
             map-get(map-get($utilities, "rounded"), "values"),
             (
               3: $border-radius-md, //edit
-              4: $border-radius-lg //edit
+              4: $border-radius-lg, //edit
+              5: $border-radius-xl,
+              6: $border-radius-xxl
             )
           ),
         )
@@ -182,7 +188,9 @@ $utilities: map-merge(
             map-get(map-get($utilities, "rounded"), "values"),
             (
               3: $border-radius-md, //edit
-              4: $border-radius-lg //edit
+              4: $border-radius-lg, //edit
+              5: $border-radius-xl,
+              6: $border-radius-xxl
             )
           ),
         )

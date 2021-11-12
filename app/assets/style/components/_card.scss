@@ -22,19 +22,36 @@
 
     &:hover{
         &>img{
-            box-shadow: 10px 10px 10px 0 rgba(0,0,0,.25);
-            border-radius: 10px;
+            box-shadow: 6px 6px 7px 0 rgba(0,0,0,.25);
+            border-radius: 15px;
         }
         &>p{
             color: $gray-700;
         }
     }
+
+    @include media-breakpoint-up(md) {
+        &:hover{
+            &>img{
+                box-shadow: 10px 10px 10px 0 rgba(0,0,0,.25);
+            }
+            
+        }
+      }
 }
 .card-hover-shadow-2{
     &:hover{
-        box-shadow: 12px 12px 10px 0 rgba(0,0,0,.25);
+        box-shadow: 6px 6px 7px 0 rgba(0,0,0,.25);
     }
+    @include media-breakpoint-up(md) {
+        &:hover{
+            box-shadow: 12px 12px 10px 0 rgba(0,0,0,.25);
+        }
+      }
    
+}
+.card-shadow{
+    box-shadow: 0 4px 10px 0 rgba(251,251,251,.25);
 }
 .card{
     border-radius: 30px;
@@ -153,4 +170,8 @@
         border-bottom-right-radius: 30px;
     }
     
+}
+
+.card-light-filter{
+    background-color:rgba(251,251,251,.4) ;
 }
