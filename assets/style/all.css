@@ -23330,7 +23330,7 @@ button {
   position: relative;
 }
 
-.card-hover-filter:hover::after {
+.card-hover-filter:hover::before {
   content: '';
   position: absolute;
   width: 100%;
@@ -23340,17 +23340,17 @@ button {
   z-index: 1200;
 }
 
-.card-hover-filter-start:hover::after {
+.card-hover-filter-start:hover::before {
   border-radius: 0;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
 }
 
-.card-hover-filter-middle:hover::after {
+.card-hover-filter-middle:hover::before {
   border-radius: 0;
 }
 
-.card-hover-filter-end:hover::after {
+.card-hover-filter-end:hover::before {
   border-radius: 0;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
@@ -23358,6 +23358,25 @@ button {
 
 .card-light-filter {
   background-color: rgba(251, 251, 251, 0.4);
+}
+
+.card-hover-filter-icon:hover::after {
+  content: url(../../images/icon-hotel.png);
+  position: absolute;
+  color: #fff;
+  width: 80px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 3rem;
+  z-index: 1201;
 }
 
 .btn-long {
