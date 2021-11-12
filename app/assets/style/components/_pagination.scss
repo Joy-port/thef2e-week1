@@ -1,0 +1,36 @@
+.pagination{
+    justify-content: center;
+}
+
+.page-item{
+    &:first-child{
+        .page-link{
+            border-radius: 50%;
+        }
+    }
+    &:last-child{
+        .page-link{
+            border-radius: 50%;
+        }
+    }
+}
+
+.page-link{
+    width: 44px;
+    height: 44px;
+    background-color: $light;
+    color: $black;
+
+    text-align: center;
+    line-height: 2rem;
+
+    font-size: 1.25rem;
+    font-weight: bold;
+    border: 0;
+    border-radius: 50%;
+
+    &:hover{
+        background-color: $gray-700;
+        color: $white;
+    }
+}
