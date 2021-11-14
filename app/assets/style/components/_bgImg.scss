@@ -10,12 +10,23 @@
 .bg-gradient-primary {
   background-color: #a7d4da91;
 }
+.bg-gradient-light-primary{
+  background-image: linear-gradient(#ADCCCE 5%, $white 30%, $white 100%);
+}
 .bg-gradient-top-cyan {
   background-image: linear-gradient($cyan, $white);
   width: 100%;
   min-height: 366px;
 }
 .bg-gradient-top-cyan-md {
+  @include media-breakpoint-up(md) {
+    background-image: linear-gradient($cyan, $white);
+    width: 100%;
+    min-height: 366px;
+  }
+  
+}
+.bg-gradient-top-med-md {
   @include media-breakpoint-up(md) {
     background-image: linear-gradient($cyan, $white);
     width: 100%;

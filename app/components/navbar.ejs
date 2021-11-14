@@ -1,54 +1,66 @@
-<div class="container <%- current === 'food'? ' ' : current === 'hotel' ? 'pb-6' : 'pb-md-10 pb-lg-21' %> ">
-  <nav class="navbar navbar-expand-md navbar-light">
-    <div class="container-fluid align-items-">
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <a href="#" class="d-md-none">
-        <img
-          class="bg-white rounded-circle p-1"
-          src="./assets/images/icon-person.png"
-          alt="person icon"
-          style="width: 24px; height: 24px"
-      /></a>
+<div class="container <%- current === 'food'? ' ' : current === 'hotel' ? 'pb-6' : current === 'view-detail' ? '' : 'pb-md-10 pb-lg-21' %> ">
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container-fluid px-0 align-items-center">
+        <button
+          class="navbar-toggler border-0 h4 p-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a href="index.html" class="d-block">
+          <img src="../assets/images/logo.png" alt="logo" class="card-bg-img" style="width: 43px; height: 33px;">
+        </a>
+        <a href="#" class="d-md-none">
+          <img
+            class="bg-white rounded-circle p-1"
+            src="./assets/images/icon-person.png"
+            alt="person icon"
+            style="width: 24px; height: 24px"
+        /></a>
 
-      <ul
-        class="collapse navbar-collapse justify-content-end"
-        id="navbarSupportedContent"
-      >
-        <li><a href="index.html" class="nav-link">活動新訊</a></li>
-        <li><a href="view.html" class="nav-link">景點</a></li>
-        <li><a href="food.html" class="nav-link">美食</a></li>
-        <li><a href="hotel.html" class="nav-link">住宿</a></li>
-        <li><a href="#" class="nav-link">交通</a></li>
-        <li class="d-none d-md-block">
-          <a href="#" class="align-middle link-dark ms-2 me-2"
-            ><span class="material-icons-outlined align-middle">search</span></a
-          >
-        </li>
-        <li class="d-none d-md-block">
-          <a href="#" class="">
-            <img
-              class="bg-white rounded-circle p-1"
-              src="./assets/images/icon-person.png"
-              alt="person icon"
-              style="width: 24px; height: 24px"
-          /></a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <h1 class="link-hide h-200">
-    <a href="index.html" class="h-100"><%- title %> </a>
-  </h1>
+        <ul
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <li><a href="index.html" class="nav-link">活動新訊</a></li>
+          <li><a href="view.html" class="nav-link">景點</a></li>
+          <li><a href="food.html" class="nav-link">美食</a></li>
+          <li><a href="hotel.html" class="nav-link">住宿</a></li>
+          <li><a href="#" class="nav-link">交通</a></li>
+          <li class="d-none d-md-block">
+            <a href="#" class="align-middle link-dark ms-2 me-2"
+              ><span class="material-icons-outlined align-middle">search</span></a
+            >
+          </li>
+          <li class="d-none d-md-block">
+            <a href="#" class="">
+              <img
+                class="bg-white rounded-circle p-1"
+                src="./assets/images/icon-person.png"
+                alt="person icon"
+                style="width: 24px; height: 24px"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <% switch (current) { 
+      case 'view-detail' : %>
+      <% break; 
+      
+      default : %>
+      <h1 class="link-hide h-200">
+        <a href="index.html" class="h-100"><%- title %> </a>
+      </h1>
+      <% break; 
+      } %> 
+
       <!-- navbar -->
       <% switch (current) { 
       case 'index' : %>
@@ -65,5 +77,9 @@
       case 'food' : %>
       <%- include('./navbars/food.ejs') %>
       <% break; 
+
+      default : %>
+      <% break; 
     } %> 
+  </div>
 </div>

@@ -19,7 +19,7 @@
     />
     <link rel="stylesheet" href="./assets/style/all.css" />
   </head>
-
+  <a href="./components/navbar.ejs"></a>
   <body>
     <!-- navbar -->
     <% switch (current) { case 'index' : %>
@@ -50,7 +50,12 @@
     >
       <%- include('./components/navbar.ejs') %>
     </div>
-    <% break; } %> 
+    <% break; case 'view-detail' : %>
+    <div class="bg-primary">
+      <%- include('./components/navbar.ejs') %>
+    </div>
+    <% break; default : %> <%- include('./components/navbar.ejs') %> <% break; }
+    %> 
     
     <%- contents %> 
     
