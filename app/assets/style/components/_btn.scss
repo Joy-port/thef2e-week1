@@ -30,3 +30,15 @@
     }
 
 }
+
+.btn-outline-gray-light{
+    &:hover{
+        background-color: $primary;
+        color: $white;
+        border: $primary solid 1px;
+        &.link-dark{
+            color: $white;
+        }
+    }
+    
+}

@@ -46,6 +46,16 @@ $utilities: map-merge(
         map-get($utilities, "border-top"),
         (
           responsive: true,
+          values:
+          map-merge(
+            map-get(map-get($utilities, "border-top"), "values"),
+            (
+              null: $border-width solid $border-color,
+              0: 0,
+              4: 4px solid $gray-700,
+              
+            )
+          ),
         )
       ),
     "border-bottom":
@@ -53,6 +63,16 @@ $utilities: map-merge(
         map-get($utilities, "border-bottom"),
         (
           responsive: true,
+          values:
+          map-merge(
+            map-get(map-get($utilities, "border-bottom"), "values"),
+            (
+              null: $border-width solid $border-color,
+              0: 0,
+              4: 4px solid $gray-700,
+              
+            )
+          ),
         )
       ),
     "border-start":
@@ -60,6 +80,16 @@ $utilities: map-merge(
         map-get($utilities, "border-start"),
         (
           responsive: true,
+          values:
+          map-merge(
+            map-get(map-get($utilities, "border-start"), "values"),
+            (
+              null: $border-width solid $border-color,
+              0: 0,
+              4: 4px solid $gray-700,
+              
+            )
+          ),
         )
       ),
     "border-end":
@@ -67,6 +97,16 @@ $utilities: map-merge(
         map-get($utilities, "border-end"),
         (
           responsive: true,
+          values:
+          map-merge(
+            map-get(map-get($utilities, "border-end"), "values"),
+            (
+              null: $border-width solid $border-color,
+              0: 0,
+              4: 4px solid $gray-700,
+              
+            )
+          ),
         )
       ),
     "width":
