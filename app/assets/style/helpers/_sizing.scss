@@ -42,6 +42,19 @@
 .h-130{
   height: 130%;
 }
-.h-48{
+.h-150{
+  height: 150px;
+}
+
+.h-md-48{
+  @include media-breakpoint-up(md) {
   height: 48%;
+  }
+}
+
+
+.h-md-400{
+  @include media-breakpoint-up(md) {
+    height: 400px;
+  }
 }
