@@ -23319,7 +23319,9 @@ button {
 
 @media (min-width: 768px) {
   .bg-md-white {
-    background-color: #fff;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff));
+    background-image: -o-linear-gradient(#fff, #fff);
+    background-image: linear-gradient(#fff, #fff);
   }
 }
 
@@ -23686,8 +23688,15 @@ input {
   height: 44px;
   background-color: #f8f8f8;
   color: #000;
-  text-align: center;
-  line-height: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 1.25rem;
   font-weight: bold;
   border: 0;
@@ -23707,6 +23716,15 @@ input {
 .page-link.disabled {
   opacity: 0.5;
   pointer-events: none;
+}
+
+.page-pre {
+  width: 55px;
+  height: 55px;
+  background-color: #dcdcdc80;
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 2.5rem;
+  font-weight: 400;
 }
 
 .fz-18 {
