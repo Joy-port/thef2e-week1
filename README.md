@@ -1,7 +1,7 @@
 # 台灣旅遊景點導覽
 
 - 選擇[設計稿](https://2021.thef2e.com/users/6296432819610583959)
-- 採用 bootstrap / scss 架構 製作版面
+- 採用 bootstrap / scss / ejs 模板製作
 - 拆分為多頁式網站，同時製作出 RWD網頁
 - 暫無功能
 
