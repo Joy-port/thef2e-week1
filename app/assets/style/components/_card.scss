@@ -154,6 +154,14 @@
     
 }
 
+.card-hover-filter-link{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: 1300;
+}
+
 .card-hover-filter-start{
     &:hover::before{
         border-radius: 0;
@@ -189,4 +197,8 @@
         opacity: 1;
         transform: scale(1);
     }
+}
+
+.link{
+    z-index: 2000;
 }
