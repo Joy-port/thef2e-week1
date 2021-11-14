@@ -19,7 +19,7 @@
     />
     <link rel="stylesheet" href="./assets/style/all.css" />
   </head>
-
+  <a href="./components/navbar.ejs"></a>
   <body>
     <!-- navbar -->
     
@@ -28,56 +28,63 @@
       style="background-image: url(./assets/images/banner-location-logo.png)"
     >
       <div class="container pb-md-10 pb-lg-21 ">
-  <nav class="navbar navbar-expand-md navbar-light">
-    <div class="container-fluid align-items-">
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <a href="#" class="d-md-none">
-        <img
-          class="bg-white rounded-circle p-1"
-          src="./assets/images/icon-person.png"
-          alt="person icon"
-          style="width: 24px; height: 24px"
-      /></a>
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container-fluid px-0 align-items-center">
+        <button
+          class="navbar-toggler border-0 h4 p-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a href="index.html" class="d-block">
+          <img src="../assets/images/logo.png" alt="logo" class="card-bg-img" style="width: 43px; height: 33px;">
+        </a>
+        <a href="#" class="d-md-none">
+          <img
+            class="bg-white rounded-circle p-1"
+            src="./assets/images/icon-person.png"
+            alt="person icon"
+            style="width: 24px; height: 24px"
+        /></a>
 
-      <ul
-        class="collapse navbar-collapse justify-content-end"
-        id="navbarSupportedContent"
-      >
-        <li><a href="index.html" class="nav-link">活動新訊</a></li>
-        <li><a href="view.html" class="nav-link">景點</a></li>
-        <li><a href="food.html" class="nav-link">美食</a></li>
-        <li><a href="hotel.html" class="nav-link">住宿</a></li>
-        <li><a href="#" class="nav-link">交通</a></li>
-        <li class="d-none d-md-block">
-          <a href="#" class="align-middle link-dark ms-2 me-2"
-            ><span class="material-icons-outlined align-middle">search</span></a
-          >
-        </li>
-        <li class="d-none d-md-block">
-          <a href="#" class="">
-            <img
-              class="bg-white rounded-circle p-1"
-              src="./assets/images/icon-person.png"
-              alt="person icon"
-              style="width: 24px; height: 24px"
-          /></a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <h1 class="link-hide h-200">
-    <a href="index.html" class="h-100">縣市景點 | 台灣旅遊導覽 Taiwan Traveler </a>
-  </h1>
+        <ul
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <li><a href="index.html" class="nav-link">活動新訊</a></li>
+          <li><a href="view.html" class="nav-link">景點</a></li>
+          <li><a href="food.html" class="nav-link">美食</a></li>
+          <li><a href="hotel.html" class="nav-link">住宿</a></li>
+          <li><a href="#" class="nav-link">交通</a></li>
+          <li class="d-none d-md-block">
+            <a href="#" class="align-middle link-dark ms-2 me-2"
+              ><span class="material-icons-outlined align-middle">search</span></a
+            >
+          </li>
+          <li class="d-none d-md-block">
+            <a href="#" class="">
+              <img
+                class="bg-white rounded-circle p-1"
+                src="./assets/images/icon-person.png"
+                alt="person icon"
+                style="width: 24px; height: 24px"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    
+      <h1 class="link-hide h-200">
+        <a href="index.html" class="h-100">縣市景點 | 台灣旅遊導覽 Taiwan Traveler </a>
+      </h1>
+       
+
       <!-- navbar -->
       
       <div class="d-flex justify-content-center gap-4 pb-15 mt-md-18 pt-md-20 pb-md-8">
@@ -111,8 +118,8 @@
 </div>
 
        
+  </div>
 </div>
-
     </div>
      
     
@@ -617,13 +624,13 @@
     <h4 class="fz-28 text-center mb-6">景點</h4>
     <ul class="display-7 fw-normal text-center">
       <li class="mb-6">
-        <a href="#" class="link-dark">熱門景點</a>
+        <a href="view.html#熱門景點" class="link-dark">熱門景點</a>
       </li>
       <li class="mb-6">
-        <a href="#" class="link-dark">網紅攻略</a>
+        <a href="view.html#網紅攻略" class="link-dark">網紅攻略</a>
       </li>
       <li class="">
-        <a href="#" class="link-dark">主題景點</a>
+        <a href="view.html#主題景點" class="link-dark">主題景點</a>
       </li>
     </ul>
   </li>
@@ -631,19 +638,19 @@
     <h4 class="fz-28 text-center mb-6">美食</h4>
     <ul class="display-7 fw-normal text-center">
       <li class="mb-6">
-        <a href="#" class="link-dark">台灣文化</a>
+        <a href="food.html" class="link-dark">台灣文化</a>
       </li>
       <li class="mb-6">
-        <a href="#" class="link-dark">台灣小吃</a>
+        <a href="food.html" class="link-dark">台灣小吃</a>
       </li>
       <li class="mb-6">
-        <a href="#" class="link-dark">台灣在地特色</a>
+        <a href="food.html" class="link-dark">台灣在地特色</a>
       </li>
       <li class="mb-6">
-        <a href="#" class="link-dark">熱門美食</a>
+        <a href="food.html#熱門美食" class="link-dark">熱門美食</a>
       </li>
       <li class="mb-6">
-        <a href="#" class="link-dark">網紅必推美食</a>
+        <a href="food.html#網紅必推美食" class="link-dark">網紅必推美食</a>
       </li>
     </ul>
   </li>
@@ -660,7 +667,7 @@
         <a href="#" class="link-dark">民宿</a>
       </li>
       <li class="">
-        <a href="#" class="link-dark">住宿推薦</a>
+        <a href="hotel.html#住宿推薦" class="link-dark">住宿推薦</a>
       </li>
     </ul>
   </li>

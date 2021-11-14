@@ -557,12 +557,6 @@ progress {
   }
 }
 
-.display-8 {
-  font-size: 0.875rem;
-  font-weight: 300;
-  line-height: 1.4;
-}
-
 .list-unstyled {
   padding-left: 0;
   list-style: none;
@@ -14095,21 +14089,6 @@ fieldset:disabled .btn {
   .fs-sm-6 {
     font-size: 1rem !important;
   }
-  .fw-sm-light {
-    font-weight: 300 !important;
-  }
-  .fw-sm-lighter {
-    font-weight: lighter !important;
-  }
-  .fw-sm-normal {
-    font-weight: 400 !important;
-  }
-  .fw-sm-bold {
-    font-weight: 700 !important;
-  }
-  .fw-sm-bolder {
-    font-weight: bolder !important;
-  }
   .text-sm-start {
     text-align: left !important;
   }
@@ -16295,21 +16274,6 @@ fieldset:disabled .btn {
   }
   .fs-md-6 {
     font-size: 1rem !important;
-  }
-  .fw-md-light {
-    font-weight: 300 !important;
-  }
-  .fw-md-lighter {
-    font-weight: lighter !important;
-  }
-  .fw-md-normal {
-    font-weight: 400 !important;
-  }
-  .fw-md-bold {
-    font-weight: 700 !important;
-  }
-  .fw-md-bolder {
-    font-weight: bolder !important;
   }
   .text-md-start {
     text-align: left !important;
@@ -18497,21 +18461,6 @@ fieldset:disabled .btn {
   .fs-lg-6 {
     font-size: 1rem !important;
   }
-  .fw-lg-light {
-    font-weight: 300 !important;
-  }
-  .fw-lg-lighter {
-    font-weight: lighter !important;
-  }
-  .fw-lg-normal {
-    font-weight: 400 !important;
-  }
-  .fw-lg-bold {
-    font-weight: 700 !important;
-  }
-  .fw-lg-bolder {
-    font-weight: bolder !important;
-  }
   .text-lg-start {
     text-align: left !important;
   }
@@ -20697,21 +20646,6 @@ fieldset:disabled .btn {
   }
   .fs-xl-6 {
     font-size: 1rem !important;
-  }
-  .fw-xl-light {
-    font-weight: 300 !important;
-  }
-  .fw-xl-lighter {
-    font-weight: lighter !important;
-  }
-  .fw-xl-normal {
-    font-weight: 400 !important;
-  }
-  .fw-xl-bold {
-    font-weight: 700 !important;
-  }
-  .fw-xl-bolder {
-    font-weight: bolder !important;
   }
   .text-xl-start {
     text-align: left !important;
@@ -22899,21 +22833,6 @@ fieldset:disabled .btn {
   .fs-xxl-6 {
     font-size: 1rem !important;
   }
-  .fw-xxl-light {
-    font-weight: 300 !important;
-  }
-  .fw-xxl-lighter {
-    font-weight: lighter !important;
-  }
-  .fw-xxl-normal {
-    font-weight: 400 !important;
-  }
-  .fw-xxl-bold {
-    font-weight: 700 !important;
-  }
-  .fw-xxl-bolder {
-    font-weight: bolder !important;
-  }
   .text-xxl-start {
     text-align: left !important;
   }
@@ -23332,12 +23251,6 @@ button {
   background-color: #a7d4da91;
 }
 
-.bg-gradient-light-primary {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #ADCCCE), color-stop(30%, #fff), to(#fff));
-  background-image: -o-linear-gradient(#ADCCCE 5%, #fff 30%, #fff 100%);
-  background-image: linear-gradient(#ADCCCE 5%, #fff 30%, #fff 100%);
-}
-
 .bg-gradient-top-cyan {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#A7D4DA), to(#fff));
   background-image: -o-linear-gradient(#A7D4DA, #fff);
@@ -23348,16 +23261,6 @@ button {
 
 @media (min-width: 768px) {
   .bg-gradient-top-cyan-md {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#A7D4DA), to(#fff));
-    background-image: -o-linear-gradient(#A7D4DA, #fff);
-    background-image: linear-gradient(#A7D4DA, #fff);
-    width: 100%;
-    min-height: 366px;
-  }
-}
-
-@media (min-width: 768px) {
-  .bg-gradient-top-med-md {
     background-image: -webkit-gradient(linear, left top, left bottom, from(#A7D4DA), to(#fff));
     background-image: -o-linear-gradient(#A7D4DA, #fff);
     background-image: linear-gradient(#A7D4DA, #fff);
@@ -23416,9 +23319,7 @@ button {
 
 @media (min-width: 768px) {
   .bg-md-white {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff));
-    background-image: -o-linear-gradient(#fff, #fff);
-    background-image: linear-gradient(#fff, #fff);
+    background-color: #fff;
   }
 }
 
@@ -23785,15 +23686,8 @@ input {
   height: 44px;
   background-color: #f8f8f8;
   color: #000;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: center;
+  line-height: 2rem;
   font-size: 1.25rem;
   font-weight: bold;
   border: 0;
@@ -23813,15 +23707,6 @@ input {
 .page-link.disabled {
   opacity: 0.5;
   pointer-events: none;
-}
-
-.page-pre {
-  width: 55px;
-  height: 55px;
-  background-color: #dcdcdc80;
-  color: rgba(0, 0, 0, 0.3);
-  font-size: 2.5rem;
-  font-weight: 400;
 }
 
 .fz-18 {
