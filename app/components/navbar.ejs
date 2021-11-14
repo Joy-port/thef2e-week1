@@ -51,12 +51,11 @@
   </h1>
       <!-- navbar -->
       <% switch (current) { 
-        case 'index' : %>
-
-        <% break; 
+      case 'index' : %>
+      <% break; 
       
       case 'view' : %>
-        <%- include('./navbars/view.ejs') %>
+      <%- include('./navbars/view.ejs') %>
       <% break; 
       
       case 'hotel' : %>
@@ -65,6 +64,6 @@
       
       case 'food' : %>
       <%- include('./navbars/food.ejs') %>
-      
-      <% break; } %> 
+      <% break; 
+    } %> 
 </div>

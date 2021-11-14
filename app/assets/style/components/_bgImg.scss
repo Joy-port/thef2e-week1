@@ -60,3 +60,9 @@
   background-image: linear-gradient($yellow, $white);
   width: 100%;
 }
+
+.bg-md-white{
+  @include media-breakpoint-up(md) {
+    background-color: $white;
+  }
+}

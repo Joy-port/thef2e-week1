@@ -439,6 +439,7 @@ $aspect-ratios: (
   "36x25": calc(256 / 368 * 100%),
   "36x21": calc(215 / 368 * 100%),
   "65x37": calc(370/655 *100),
+  "9x6": calc(6/9 *100),
 ) !default;
 // scss-docs-end aspect-ratios
 // stylelint-enable function-disallowed-list
@@ -1399,7 +1400,7 @@ $breadcrumb-margin-bottom:          1rem !default;
 $breadcrumb-bg:                     null !default;
 $breadcrumb-divider-color:          $gray-600 !default;
 $breadcrumb-active-color:           $gray-600 !default;
-$breadcrumb-divider:                quote("/") !default;
+$breadcrumb-divider:                quote(">") !default;
 $breadcrumb-divider-flipped:        $breadcrumb-divider !default;
 $breadcrumb-border-radius:          null !default;
 // scss-docs-end breadcrumb-variables
