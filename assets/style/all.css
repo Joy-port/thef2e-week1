@@ -23390,8 +23390,20 @@ button {
   height: 130%;
 }
 
-.h-48 {
-  height: 48%;
+.h-150 {
+  height: 150px;
+}
+
+@media (min-width: 768px) {
+  .h-md-48 {
+    height: 48%;
+  }
+}
+
+@media (min-width: 768px) {
+  .h-md-400 {
+    height: 400px;
+  }
 }
 
 .bg-img {
