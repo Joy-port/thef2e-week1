@@ -2,7 +2,21 @@
   color: $gray-800;
   font-weight: 700;
   position: relative;
-  &:not(:last-child)::after {
+}
+.link-dark {
+  color: $gray-800;
+  &:hover {
+    color: $gray-900;
+  }
+}
+.link-hide {
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.seprate-line-md::after {
+  @include media-breakpoint-up(md) {
     content: "";
     position: absolute;
     width: 2px;
@@ -12,14 +26,4 @@
     right: 0;
   }
 }
-.link-dark {
-  color: $gray-800;
-  &:hover {
-    color: $gray-900;
-  }
-}
-.link-hide {
-    text-indent: 101%;
-    overflow: hidden;
-    white-space: nowrap;
-  }
+
