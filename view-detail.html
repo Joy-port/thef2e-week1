@@ -103,6 +103,7 @@
     </div>
   </nav>
 
+
   <section class="align-items-center d-md-flex h-100 gap-md-12 mb-12">
     <img
       src="https://images.unsplash.com/photo-1504412121710-315e0e12b173?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1773&q=80"
@@ -112,10 +113,11 @@
     <!-- <div class="ratio ratio-9x6 h-600 flex-grow-1">
            
         </div> -->
+ 
     <div class="w-md-30">
       <div class="py-3 pe-md-11 px-9 ps-md-0">
         <h2 class="h1 text-md-center mb-2">台北市</h2>
-        <div class="d-flex justify-content-center gap-2 mb-2">
+        <div class="d-none d-md-flex justify-content-center gap-2 mb-2">
           <a href="#" class="material-icons-outlined link-star"> star </a>
           <span class="me-1">2.5</span>
           <a href="#" class="material-icons-outlined"> visibility </a>
@@ -129,54 +131,216 @@
         </p>
       </div>
     </div>
+    <div class="bg-gradient-top-cyan pt-20 pb-20 d-md-none" style="margin-top: -500px; height: 500px;"></div>
   </section>
 </div>
 
-<div class="container-md">
-    <div class="d-flex flex-column flex-md-row">
-        <div class="d-flex flex-md-column mb-5 border-bottom border-4 border-dark w-100 w-md-50 border-md-0">
-
-                <div class="w-70 w-md-100 pe-6 pe-md-0 me-md-12 pb-7 pb-md-13 mb-2 mb-md-0 border-end border-end-md-0 border-4 border-md-4 border-dark">
-                <h3 class="h1 mb-10">景點資訊</h3>
-                    <p class="d-flex fz-md-2 fw-normal">
-                      地址 <a href="#" class="ms-2 ms-md-7 link-dark"
+<section class="container-md">
+    <div class="row h-100 mb-5">
+        <div class="col-md-6 mb-5">
+        <div class="d-flex flex-md-column border-bottom border-4 border-gray-light border-md-0 me-md-13 h-100">
+                <div class="w-70 w-md-100 pe-5 pe-md-0 pb-md-13 mb-2 mb-md-0 border-end border-end-md-0 border-4 border-md-4 border-gray-light fs-8 fs-md-4 fs-lg-2 text-nowrap">
+                <h3 class="fs-6 fs-md-1 mb-3 mb-md-10">景點資訊</h3>
+                    <p class="d-flex flex-wrap gap-2 gap-md-2 fw-normal mb-3 mb-md-10">
+                      地址 <a href="#" class="link-dark"
                         >臺北市信義區信義路5段7號</a
                       >
                     </p>
-                    <p class="d-flex fz-md-2 fw-normal">
+                    <p class="d-flex flex-wrap align-items-center gap-2 gap-md-2 fw-normal mb-3 mb-md-10">
                       電話
                       <a
                         href="tel:+886-2-81018800"
-                        class="ms-2 ms-md-7 link-dark d-flex rounded-lg gap-3"
+                        class="link-dark d-flex rounded-lg gap-3 align-items-center"
                         >+886-2-81018800
-                        <span class="material-icons-outlined"> phone_in_talk </span>
+                        <span class="material-icons-outlined lh-base"> phone_in_talk </span>
                       </a>
                     </p>
                 
-                    <div class="d-flex gap-2 gap-md-7">
-                      <p class="fz-md-2 fw-normal">開放時間</p>
-                      <div class="fz-md-2 fw-normal">
+                    <div class="d-flex flex-wrap gap-2 gap-md-2">
+                      <p class="fw-normal">開放時間</p>
+                      <div class="fw-normal">
                         <p class="text-dark">星期一～五 11:00 - 21:00</p>
                         <p class="text-dark">星期六.日 10:00 - 21:00</p>
                       </div>
                     </div>
                 </div>
-                <ul class="w-30 w-md-100 d-flex gap-3 flex-column flex-md-row align-items-center justify-content-center ps-3 ps-md-0 text-nowrap border-top border-4 border-dark pt-md-3">
-                    <li class=""><a href="#" class="btn w-100 btn-light">周邊景點</a></li>
-                    <li class=""><a href="#" class="btn w-100 btn-light">周邊美食</a></li>
-                    <li class=""><a href="#" class="btn w-100 btn-light">周邊住宿</a></li>
+                <ul class="row justify-content-center align-items-center ps-3 ps-md-0 border-top-md-4 pt-md-3">
+                    <li class="col-md-3 text-center"><a href="#" class="w-80 w-md-100 btn btn-outline-gray-light link-dark">周邊景點</a></li>
+                    <li class="col-md-3 text-center"><a href="#" class="w-80 w-md-100 btn btn-outline-gray-light link-dark">周邊美食</a></li>
+                    <li class="col-md-3 text-center"><a href="#" class="w-80 w-md-100 btn btn-outline-gray-light link-dark">周邊住宿</a></li>
                 </ul>
 
         </div>
-        <div class="">
-            <h3 class="">景點地圖</h3>
-            <iframe class="w-100 border-0 mb-7" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115666.61479077699!2d121.46775978554331!3d25.048265552225693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a98b83418d69%3A0xceb20b414ca9e822!2smystery%20yoga!5e0!3m2!1szh-TW!2stw!4v1629896643151!5m2!1szh-TW!2stw" height="360" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                
+    </div>
+        <div class="col-md-6">
+            <div class="ps-md-16 border-start-md-4 h-100">
+            <h3 class="fs-6 fs-md-3 mb-3 mb-md-11">景點地圖</h3>
+            
+            <iframe class="ratio ratio-1x1 border-0 w-100 h-100 pb-20" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115666.61479077699!2d121.46775978554331!3d25.048265552225693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a98b83418d69%3A0xceb20b414ca9e822!2smystery%20yoga!5e0!3m2!1szh-TW!2stw!4v1629896643151!5m2!1szh-TW!2stw" allowfullscreen="" loading="lazy"></iframe>
+        </div>
         </div>
     </div>
   
-</div>
- 
+</section>
+
+
+<section>
+    <div class="bg-primary py-3">
+      <div class="container d-flex justify-content-between align-items-center">
+        <h2 class="text-white">網紅攻略</h2>
+        <button
+          type="button"
+          class="btn btn-outline-light btn-long btn-long-primary"
+        >
+          查看更多
+        </button>
+      </div>
+    </div>
+    <div class="container py-17">
+        <div class="position-relative">
+        <ul class="row gap-15 gap-md-0 pt-16">
+          <li class="col-md-4 mb-5 mb-md-0">
+            <div class="card card-border card-rounded h-100 card-hover-shadow-2">
+              <a href="#" class="d-flex stretched-link"><img
+                src="https://images.unsplash.com/photo-1593359946436-3422030a357e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1325&q=80"
+                alt="img"
+                class="card-bg-img card-rounded-top h-256"
+              /></a>
+              <img
+                class="position-absolute top-0 start-50 translate-middle"
+                src="./assets/images/avatar-male.png"
+                alt="user"
+              />
+              <a href="#" class="card-btn-circle card-top-end">
+                <span class="material-icons-outlined align-middle">
+                  bookmark_border
+                </span>
+              </a>
+              <div class="card-body d-flex flex-column justify-content-between py-5 px-7">
+                <div class="">
+  
+                  <h3 class="h2 text-black mb-4">台北101攻略</h3>
+                  <p class="text-muted">除了台北101台北到底還有那些夜景？</p>
+                  <p class="text-muted mb-3">
+                    讓KKday告訴你台北還有哪些易達又美麗的夜景景點吧!
+                  </p>
+                </div>
+                <div class="d-flex justify-content-end text-muted gap-1">
+                  <a href="#" class="material-icons-outlined"> visibility </a>
+                  <span class="me-1">6 萬</span>
+                  <a href="#" class="material-icons-outlined">
+                    favorite_border
+                  </a>
+                  <span>6 千</span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="col-md-4 mb-5 mb-md-0">
+            <div class="card card-border card-rounded h-100 card-hover-shadow-2">
+              <a href="#" class="d-flex stretched-link">
+                  <img
+                    src="https://images.unsplash.com/photo-1593359946436-3422030a357e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1325&q=80"
+                    alt="img"
+                    class="card-bg-img card-rounded-top h-256"
+                  />
+              </a>
+              <img
+                class="position-absolute top-0 start-50 translate-middle"
+                src="./assets/images/avatar-female.png"
+                alt="user"
+              />
+              <a href="#" class="card-btn-circle card-top-end">
+                <span class="material-icons-outlined align-middle">
+                  bookmark_border
+                </span>
+              </a>
+              <div class="card-body d-flex flex-column justify-content-between py-5 px-7">
+                <div class="">
+                </div>
+                <h3 class="h2 text-black mb-4">台北101攻略</h3>
+                <p class="text-muted">除了台北101台北到底還有那些夜景？</p>
+                <p class="text-muted mb-3">
+                  讓KKday告訴你台北還有哪些易達又美麗的夜景景點吧!
+                </p>
+                  
+                <div class="d-flex justify-content-end text-muted gap-1">
+                  <a href="#" class="material-icons-outlined"> visibility </a>
+                  <span class="me-1">6 萬</span>
+                  <a href="#" class="material-icons-outlined">
+                    favorite_border
+                  </a>
+                  <span>6 千</span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="col-md-4 mb-5 mb-md-0">
+            <div class="card card-border card-rounded h-100 card-hover-shadow-2">
+              <a href="#" class="d-flex stretched-link"><img
+                src="https://images.unsplash.com/photo-1593359946436-3422030a357e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1325&q=80"
+                alt="img"
+                class="card-bg-img card-rounded-top h-256"
+              /></a>
+              <img
+                class="position-absolute top-0 start-50 translate-middle"
+                src="./assets/images/avatar-male.png"
+                alt="user"
+              />
+              <a href="#" class="card-btn-circle card-top-end">
+                <span class="material-icons-outlined align-middle">
+                  bookmark_border
+                </span>
+              </a>
+              <div class="card-body d-flex flex-column justify-content-between py-5 px-7">
+                <div class="">
+                  <h3 class="h2 text-black mb-4">台北101攻略</h3>
+                  <p class="text-muted">除了台北101台北到底還有那些夜景？</p>
+                  <p class="text-muted mb-3">
+                    讓KKday告訴你台北還有哪些易達又美麗的夜景景點吧!
+                  </p>
+                </div>
+                <div class="d-flex justify-content-end text-muted gap-1">
+                  <a href="#" class="material-icons-outlined"> visibility </a>
+                  <span class="me-1">6 萬</span>
+                  <a href="#" class="material-icons-outlined">
+                    favorite_border
+                  </a>
+                  <span>6 千</span>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <ul
+        class="
+          pagination
+          position-absolute
+          top-50
+          translate-middle-y
+          w-100
+          justify-content-between
+          pe-0
+          mt-n14
+          d-none
+          d-md-flex
+        "
+      >
+        <li class="page-item ms-n11">
+          <a href="#" class="material-icons-outlined page-link disabled page-pre">
+            chevron_left
+          </a>
+        </li>
+        <li class="page-item me-n11">
+          <a href="#" class="page-link material-icons-outlined page-pre"
+            >chevron_right
+          </a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div class="bg-gradient-bottom-cyan pt-20 pb-20 d-md-none" style="margin-top: -1200px; height: 1200px;"></div>
+  </section> 
     
     <footer>
   <div class="py-16 | d-none d-md-block bg-gradient-bottom-cyan ">
