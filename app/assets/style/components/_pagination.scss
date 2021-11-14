@@ -21,8 +21,9 @@
     background-color: $light;
     color: $black;
 
-    text-align: center;
-    line-height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     font-size: 1.25rem;
     font-weight: bold;
@@ -42,4 +43,13 @@
         opacity: 0.5;
         pointer-events: none;
     }
+}
+
+.page-pre{
+    width: 55px;
+    height: 55px;
+    background-color: #dcdcdc80;
+    color: $gray-700;
+    font-size: 2.5rem;
+    font-weight: 400;
 }

@@ -63,6 +63,6 @@
 
 .bg-md-white{
   @include media-breakpoint-up(md) {
-    background-color: $white;
+   background-image: linear-gradient($white, $white);
   }
 }
