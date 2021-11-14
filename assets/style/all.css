@@ -23498,6 +23498,25 @@ button {
   }
 }
 
+.bg-navbar {
+  background: #fff;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: absolute;
+  top: 0;
+  left: -30px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  .bg-navbar {
+    position: static;
+    background: transparent;
+    padding: 0;
+  }
+}
+
 .card-tag-top {
   background-color: #fff;
   color: #000;
@@ -23751,31 +23770,6 @@ button {
   font-size: 18px;
 }
 
-.btn-long-primary:hover {
-  color: #6E9292;
-  background-color: #ffffff91;
-}
-
-.btn-long-success:hover {
-  color: #738677;
-  background-color: #ffffff91;
-}
-
-.btn-long-orange:hover {
-  color: #C2BB96;
-  background-color: #ffffff91;
-}
-
-.btn-outline-gray-light:hover {
-  background-color: #6E9292;
-  color: #fff;
-  border: #6E9292 solid 1px;
-}
-
-.btn-outline-gray-light:hover.link-dark {
-  color: #fff;
-}
-
 .input-search {
   border-radius: 0.625rem;
   padding-top: 0.25rem;
@@ -23842,16 +23836,6 @@ input {
   position: relative;
 }
 
-.nav-link:not(:last-child)::after {
-  content: "";
-  position: absolute;
-  width: 2px;
-  height: 1.5rem;
-  border-right: 2px solid rgba(0, 0, 0, 0.5);
-  line-height: 1.5rem;
-  right: 0;
-}
-
 .link-dark {
   color: rgba(0, 0, 0, 0.5);
 }
@@ -23864,6 +23848,18 @@ input {
   text-indent: 101%;
   overflow: hidden;
   white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+  .seprate-line-md::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 1.5rem;
+    border-right: 2px solid rgba(0, 0, 0, 0.5);
+    line-height: 1.5rem;
+    right: 0;
+  }
 }
 
 .pagination {
@@ -23922,6 +23918,40 @@ input {
   color: rgba(0, 0, 0, 0.3);
   font-size: 2.5rem;
   font-weight: 400;
+}
+
+.page-top {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 88%;
+  left: 88%;
+  width: 50px;
+  height: 50px;
+}
+
+.hover-btn-primary:hover {
+  background-color: #6E9292;
+  color: #fff;
+  border: #6E9292 solid 1px;
+}
+
+.hover-btn-primary:hover.link-dark {
+  color: #fff;
+}
+
+.btn-long-primary:hover {
+  color: #6E9292;
+  background-color: #ffffff91;
+}
+
+.btn-long-success:hover {
+  color: #738677;
+  background-color: #ffffff91;
+}
+
+.btn-long-orange:hover {
+  color: #C2BB96;
+  background-color: #ffffff91;
 }
 
 .fz-18 {
