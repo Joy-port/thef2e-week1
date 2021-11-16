@@ -156,10 +156,12 @@
 
 .card-hover-filter-link{
     position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 100%;
     height: 100%;
-    display: flex;
-    z-index: 1300;
+    z-index: 2200;
 }
 
 .card-hover-filter-start{
