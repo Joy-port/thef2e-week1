@@ -3,6 +3,9 @@
   font-weight: 700;
   position: relative;
 }
+.link {
+  z-index: 2000;
+}
 .link-dark {
   color: $gray-800;
   &:hover {

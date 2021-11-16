@@ -1,38 +1,38 @@
 //+ fw-md //change  //h+responsive
 $utilities: map-merge(
   $utilities,
-  ( 
+  (
     "opacity": (
       responsive: true,
       property: opacity,
       values: (
-        1: .1,
-        2: .2,
-        3: .3,
-        4: .4,
-        5: .5,
-        6: .6,
-        7: .7,
-        8: .8,
-        9: .9,
-    ),
-    "overflow":
-      map-merge(
-        map-get($utilities, "overflow"),
-        (
-          responsive: true,
-        )
+        1: 0.1,
+        2: 0.2,
+        3: 0.3,
+        4: 0.4,
+        5: 0.5,
+        6: 0.6,
+        7: 0.7,
+        8: 0.8,
+        9: 0.9,
       ),
-    "overflow-x": (
-      responsive: true,
-      property: overflow-x,
-      values: auto hidden visible scroll,
-    ),
-    "overflow-y": (
-      responsive: true,
-      property: overflow-y,
-      values: auto hidden visible scroll,
-    ),
+      "overflow":
+        map-merge(
+          map-get($utilities, "overflow"),
+          (
+            responsive: true,
+          )
+        ),
+      "overflow-x": (
+        responsive: true,
+        property: overflow-x,
+        values: auto hidden visible scroll,
+      ),
+      "overflow-y": (
+        responsive: true,
+        property: overflow-y,
+        values: auto hidden visible scroll,
+      ),
     ),
     "border":
       map-merge(
@@ -47,15 +47,14 @@ $utilities: map-merge(
         (
           responsive: true,
           values:
-          map-merge(
-            map-get(map-get($utilities, "border-top"), "values"),
-            (
-              null: $border-width solid $border-color,
-              0: 0,
-              4: 4px solid $gray-700,
-              
-            )
-          ),
+            map-merge(
+              map-get(map-get($utilities, "border-top"), "values"),
+              (
+                null: $border-width solid $border-color,
+                0: 0,
+                4: 4px solid $gray-700,
+              )
+            ),
         )
       ),
     "border-bottom":
@@ -64,15 +63,14 @@ $utilities: map-merge(
         (
           responsive: true,
           values:
-          map-merge(
-            map-get(map-get($utilities, "border-bottom"), "values"),
-            (
-              null: $border-width solid $border-color,
-              0: 0,
-              4: 4px solid $gray-700,
-              
-            )
-          ),
+            map-merge(
+              map-get(map-get($utilities, "border-bottom"), "values"),
+              (
+                null: $border-width solid $border-color,
+                0: 0,
+                4: 4px solid $gray-700,
+              )
+            ),
         )
       ),
     "border-start":
@@ -81,15 +79,14 @@ $utilities: map-merge(
         (
           responsive: true,
           values:
-          map-merge(
-            map-get(map-get($utilities, "border-start"), "values"),
-            (
-              null: $border-width solid $border-color,
-              0: 0,
-              4: 4px solid $gray-700,
-              
-            )
-          ),
+            map-merge(
+              map-get(map-get($utilities, "border-start"), "values"),
+              (
+                null: $border-width solid $border-color,
+                0: 0,
+                4: 4px solid $gray-700,
+              )
+            ),
         )
       ),
     "border-end":
@@ -98,15 +95,14 @@ $utilities: map-merge(
         (
           responsive: true,
           values:
-          map-merge(
-            map-get(map-get($utilities, "border-end"), "values"),
-            (
-              null: $border-width solid $border-color,
-              0: 0,
-              4: 4px solid $gray-700,
-              
-            )
-          ),
+            map-merge(
+              map-get(map-get($utilities, "border-end"), "values"),
+              (
+                null: $border-width solid $border-color,
+                0: 0,
+                4: 4px solid $gray-700,
+              )
+            ),
         )
       ),
     "width":
@@ -160,92 +156,101 @@ $utilities: map-merge(
           responsive: true,
         )
       ),
-      "font-weight":
+    "font-weight":
       map-merge(
         map-get($utilities, "font-weight"),
         (
           responsive: true,
         )
       ),
-      "rounded":
+    "rounded":
       map-merge(
         map-get($utilities, "rounded"),
         (
           responsive: true,
           values:
-          map-merge(
-            map-get(map-get($utilities, "rounded"), "values"),
-            (
-              3: $border-radius-md, //edit
-              4: $border-radius-lg, //edit
-              5: $border-radius-xl,
-              6: $border-radius-xxl
-            )
-          ),
+            map-merge(
+              map-get(map-get($utilities, "rounded"), "values"),
+              (
+                3: $border-radius-md,
+                //edit
+                4: $border-radius-lg,
+                //edit
+                5: $border-radius-xl,
+                6: $border-radius-xxl,
+              )
+            ),
         )
       ),
-      "rounded-top":
+    "rounded-top":
       map-merge(
         map-get($utilities, "rounded-top"),
         (
           responsive: true,
         )
       ),
-      "rounded-end":
+    "rounded-end":
       map-merge(
         map-get($utilities, "rounded-end"),
         (
           responsive: true,
           values:
-          map-merge(
-            map-get(map-get($utilities, "rounded"), "values"),
-            (
-              3: $border-radius-md, //edit
-              4: $border-radius-lg, //edit
-              5: $border-radius-xl,
-              6: $border-radius-xxl
-            )
-          ),
+            map-merge(
+              map-get(map-get($utilities, "rounded"), "values"),
+              (
+                3: $border-radius-md,
+                //edit
+                4: $border-radius-lg,
+                //edit
+                5: $border-radius-xl,
+                6: $border-radius-xxl,
+              )
+            ),
         )
       ),
-      "rounded-bottom":
+    "rounded-bottom":
       map-merge(
         map-get($utilities, "rounded-bottom"),
         (
           responsive: true,
           values:
-          map-merge(
-            map-get(map-get($utilities, "rounded"), "values"),
-            (
-              3: $border-radius-md, //edit
-              4: $border-radius-lg, //edit
-              5: $border-radius-xl,
-              6: $border-radius-xxl
-            )
-          ),
+            map-merge(
+              map-get(map-get($utilities, "rounded"), "values"),
+              (
+                3: $border-radius-md,
+                //edit
+                4: $border-radius-lg,
+                //edit
+                5: $border-radius-xl,
+                6: $border-radius-xxl,
+              )
+            ),
         )
       ),
-      "rounded-start":
+    "rounded-start":
       map-merge(
         map-get($utilities, "rounded-start"),
         (
           responsive: true,
           values:
-          map-merge(
-            map-get(map-get($utilities, "rounded"), "values"),
-            (
-              3: $border-radius-md, //edit
-              4: $border-radius-lg, //edit
-              5: $border-radius-xl,
-              6: $border-radius-xxl
-            )
-          ),
+            map-merge(
+              map-get(map-get($utilities, "rounded"), "values"),
+              (
+                3: $border-radius-md,
+                //edit
+                4: $border-radius-lg,
+                //edit
+                5: $border-radius-xl,
+                6: $border-radius-xxl,
+              )
+            ),
         )
       ),
-    "ratio":(property: --bs-aspect-ratio,
-    class: ratio,
-    responsive: true,
-    values: $aspect-ratios,
+    "ratio": (
+      property: --bs-aspect-ratio,
+      class: ratio,
+      responsive: true,
+      values: $aspect-ratios,
     ),
   )
 );

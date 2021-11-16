@@ -1,3 +1,9 @@
+.bg-shadow {
+  /* Add the blur effect */
+  -moz-box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
+}
 .bg-img {
   background-repeat: no-repeat;
   background-size: cover;
@@ -7,11 +13,21 @@
 .bg-img-top {
   background-position: center top;
 }
+
+.bg-teal {
+  background-color: $teal;
+}
+.bg-md-white {
+  @include media-breakpoint-up(md) {
+    background-image: linear-gradient($white, $white);
+  }
+}
+
 .bg-gradient-primary {
   background-color: #a7d4da91;
 }
-.bg-gradient-light-primary{
-  background-image: linear-gradient(#ADCCCE 5%, $white 30%, $white 100%);
+.bg-gradient-light-primary {
+  background-image: linear-gradient(#adccce 5%, $white 30%, $white 100%);
 }
 .bg-gradient-top-cyan {
   background-image: linear-gradient($cyan, $white);
@@ -24,28 +40,25 @@
     width: 100%;
     min-height: 366px;
   }
-  
+}
+.bg-gradient-top-teal {
+  background-image: linear-gradient($teal, $white);
+  width: 100%;
+}
+.bg-gradient-top-pink {
+  background-image: linear-gradient($pink, $white);
+  width: 100%;
+}
+
+.bg-gradient-top-yellow {
+  background-image: linear-gradient($yellow, $white);
+  width: 100%;
 }
 .bg-gradient-bottom-cyan {
   background-image: linear-gradient($white, $cyan);
   width: 100%;
   min-height: 376px;
 }
-
-.bg-gradient-top-teal{
-    background-image: linear-gradient($teal, $white);
-    width: 100%;
-}
-.bg-teal{
-    background-color: $teal;
-}
-.bg-shadow {
-  /* Add the blur effect */
-  -moz-box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
-  -webkit-box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
-  box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
-}
-
 
 .bg-gradient-bottom-teal {
   background-image: linear-gradient($white, $teal);
@@ -63,23 +76,8 @@
   width: 100%;
   min-height: 376px;
 }
-.bg-gradient-top-pink{
-  background-image: linear-gradient($pink, $white);
-  width: 100%;
-}
 
-.bg-gradient-top-yellow {
-  background-image: linear-gradient($yellow, $white);
-  width: 100%;
-}
-
-.bg-md-white{
-  @include media-breakpoint-up(md) {
-   background-image: linear-gradient($white, $white);
-  }
-}
-
-.bg-navbar{
+.bg-navbar {
   background: $white;
   padding-left: 10px;
   padding-right: 10px;
@@ -91,12 +89,9 @@
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 
-
-
   @include media-breakpoint-up(md) {
     position: static;
     background: transparent;
     padding: 0;
-   }
+  }
 }
-
