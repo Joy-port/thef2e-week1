@@ -145,7 +145,11 @@
     // transform: rotate(0.04deg);
   }
 }
-
+.card-hover-filter-sm{
+    &:hover::before {
+        border-radius: 20px;
+    }
+}
 .card-hover-filter-link {
   position: absolute;
   top: 50%;
