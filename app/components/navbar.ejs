@@ -1,4 +1,4 @@
-<div class="container-md <%- current === 'food'? ' ' : current === 'hotel' ? 'pb-6' : current === 'view-detail' ? '' : 'pb-md-10 pb-lg-21' %> ">
+<div class="container-lg <%- current === 'food'? ' ' : current === 'hotel' ? 'pb-6' : current === 'view-detail' ? '' : current === 'transport'? '' : 'pb-md-10 pb-lg-21' %> ">
     <nav class="navbar navbar-expand-md navbar-light position-relative">
       <div class="container-fluid px-0 align-items-center">
         <button
@@ -12,9 +12,6 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a href="index.html" class="d-block">
-          <img src="../assets/images/logo.png" alt="logo" class="card-bg-img" style="width: 43px; height: 33px;">
-        </a>
         <a href="#" class="d-md-none">
           <img
             class="bg-white rounded-circle p-1"
@@ -31,7 +28,7 @@
           <li><a href="view.html" class="nav-link seprate-line-md">景點</a></li>
           <li><a href="food.html" class="nav-link seprate-line-md">美食</a></li>
           <li><a href="hotel.html" class="nav-link seprate-line-md">住宿</a></li>
-          <li><a href="#" class="nav-link">交通</a></li>
+          <li><a href="transport.html" class="nav-link">交通</a></li>
           <li class="d-none d-md-block">
             <a href="#" class="align-middle link-dark ms-2 me-2"
               ><span class="material-icons-outlined align-middle">search</span></a
@@ -62,10 +59,7 @@
       } %> 
 
       <!-- navbar -->
-      <% switch (current) { 
-      case 'index' : %>
-      <% break; 
-      
+      <% switch (current) {       
       case 'view' : %>
       <%- include('./navbars/view.ejs') %>
       <% break; 
@@ -79,6 +73,7 @@
       <% break; 
 
       default : %>
+      <div class="h-200 h-md-300"></div>
       <% break; 
     } %> 
   </div>

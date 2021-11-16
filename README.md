@@ -9,7 +9,10 @@
 
 - [首頁](https://joy-port.github.io/thef2e-week1/)
 - [景點](https://joy-port.github.io/thef2e-week1/view.html)
+    - [城市](https://joy-port.github.io/thef2e-week1/view-city.html)
+    - [景點詳細內容](https://joy-port.github.io/thef2e-week1/view-detail.html)
 - [美食](https://joy-port.github.io/thef2e-week1/food.html)
 - [住宿](https://joy-port.github.io/thef2e-week1/hotel.html)
+- [交通](https://joy-port.github.io/thef2e-week1/transport.html)
 
-###### 2021 第三屆 the F2E 競賽 第一週投稿題目
+###### 2021 第三屆 the F2E 競賽 第一週投稿題目 by Joy Cheng

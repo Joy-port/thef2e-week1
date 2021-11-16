@@ -1,6 +1,7 @@
 // APP ID：bbbf44c0e2534c17bbf5553afe5cfb24
 // APP Key：YLongjG_6wqXgBm5FQ4LIpW7bPQ
 
+
 //景點
 //https://ptx.transportdata.tw/MOTC/v2/Tourism/ScenicSpot?$top=30&$format=JSON
 //＋市區
@@ -21,31 +22,29 @@
 const viewList = document.querySelector('.js-view-list');
 const foodList = document.querySelector('.js-food-list');
 const hotelList = document.querySelector('.js-hotel-list');
-
 let data = [];
 let type = '';
 let city = '';
-let num = 0;
+let num = 3;
 
-// function choseDataType(inputType, inputCity, inputNum){
-
-//    switch(inputType){
-//       case'ScenicSpot':
-//       getAPI('ScenicSpot', inputCity, num);
-//       break;
-//       case'Restaurant':
-//       getAPI('Restaurant', inputCity, num);
-//       break;
-//       case'Hotel':
-//       getAPI('Hotel', inputCity, num);
-//       break;
-//       case'Activity':
-//       getAPI('Activity', inputCity, num);
-//       break;
-//       default:
-//       break ;
-//    };
-// }
+function choseDataType(type, city, num){
+   switch(type){
+      case'ScenicSpot':
+      getAPI('ScenicSpot', city, num);
+      break;
+      case'Restaurant':
+      getAPI('Restaurant', city, num);
+      break;
+      case'Hotel':
+      getAPI('Hotel', city, num);
+      break;
+      case'Activity':
+      getAPI('Activity', city, num);
+      break;
+      default:
+      break ;
+   };
+}
 
 function getAPI(inputType, inputCity, inputNum){
 
@@ -57,6 +56,7 @@ function getAPI(inputType, inputCity, inputNum){
   )
   .then(function (res) {
    data = res.data;
+   console.log(data);
    renderType(inputType);
 
   })
@@ -95,6 +95,9 @@ function renderType(inputType){
       // getAPI('Activity', city, num);
       break;
       default:
+         renderViewData();
+         renderFoodData();
+         renderHotelData();
       break ;
    };
 }
@@ -256,9 +259,13 @@ function renderHotelData(){
 }
 
 function init(){
-  // getAPI('ScenicSpot', 'Taipei', 3);
-  // getAPI('Restaurant', 'Tainan', 3);
-  getAPI('Hotel', 'PingtungCounty', 3);
+   choseDataType('ScenicSpot', 'Taipei', 3);
+   // choseDataType('Restaurant', 'Taipei', 3);
+   // choseDataType('Hotel', 'Taipei', 3);
+   
+
 }
 
 init();
+
+

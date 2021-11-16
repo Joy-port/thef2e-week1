@@ -51,7 +51,11 @@
   height: 48%;
   }
 }
-
+.h-md-300{
+  @include media-breakpoint-up(md) {
+    height: 300px;
+  }
+}
 
 .h-md-400{
   @include media-breakpoint-up(md) {
